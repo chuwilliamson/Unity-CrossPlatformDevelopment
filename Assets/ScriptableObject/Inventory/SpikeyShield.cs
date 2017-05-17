@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Spikey Shield", menuName = "Items/Shields/Spikey Shield")]
-public class SpikeyShield : ShieldConfig
+public class SpikeyShield : Shield
 {
 #pragma warning disable 0649
     Anima2D.SpriteMesh spikeyShieldMesh;
@@ -17,6 +17,11 @@ public class SpikeyShield : ShieldConfig
     public override void StopBlock()
     {
 
+    }
+
+    public override void Execute()
+    {
+        throw new System.NotImplementedException();
     }
 
     public override void Initialize(GameObject obj)
