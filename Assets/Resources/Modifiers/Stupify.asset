@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2c369bcf98e9ce4d9b433b33ecf497b, type: 3}
   m_Name: Stupify
   m_EditorClassIdentifier: 
-  EffectedStatType: 0
-  TheMod:
+  EffectedStat: {fileID: 11400000, guid: 9deb50faa16e99744852fb6704c1efd8, type: 2}
+  mod:
     stat: 
     type: 
     value: 0

@@ -9,13 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 356c61aa227d77546b09d6c6ff619f74, type: 3}
-  m_Name: LiamStats
+  m_Name: LoganStats
   m_EditorClassIdentifier: 
-  INSPECTOR_MODS: []
-  stats:
-  - _baseValue: 0
-    Name: 4
-    Value: 100
-  - _baseValue: 0
-    Name: 5
-    Value: 50
+  StatsArray:
+  - {fileID: 11400000, guid: e9a5aebd17170cc4db0784f2cca8c848, type: 2}
+  - {fileID: 11400000, guid: 9deb50faa16e99744852fb6704c1efd8, type: 2}

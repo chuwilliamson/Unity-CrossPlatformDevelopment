@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3851384a9420e974d96687e0061aafc6, type: 3}
   m_Name: KitchenKnife
   m_EditorClassIdentifier: 
-  ID: 0
-  Name: CombatKnife
-  sprite: {fileID: 21300028, guid: d08b3f4556c15fd4594461dc8cdf5b77, type: 3}
+  _itemName: CombatKnife
+  DisplayName: 
+  ItemSprite: {fileID: 21300000, guid: 10fbf7adee8bfee42b08e69d1d956822, type: 3}
   Damage: 0

@@ -2501,7 +2501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f047173bac04e484b83667f4db44193d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backPack_config: {fileID: 11400000, guid: 529dc606c0f1e8c408080490a6134c8b, type: 2}
+  backPack_config: {fileID: 0}
   backPack_runtime: {fileID: 0}
 --- !u!114 &114352463390898088
 MonoBehaviour:
@@ -2600,7 +2600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyColliderOffset: {x: 0, y: 0}
   MyColliderSize: {x: 0, y: 0}
-  _ShieldConfig: {fileID: 11400000, guid: ba7476647c0296846b90a23c416ea43d, type: 2}
+  _ShieldConfig: {fileID: 0}
 --- !u!114 &114573557592765506
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2646,6 +2646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a46391207c77e44692807dceaed1fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CharacterStats: {fileID: 0}
   onHealthChange:
     m_PersistentCalls:
       m_Calls:
@@ -2660,14 +2661,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: PlayerBehaviour+OnHealthChange, Assembly-CSharp, Version=0.0.0.0,
+    m_TypeName: CharacterBehaviour+OnHealthChange, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onStatModify:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: PlayerBehaviour+OnStatModify, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  PlayerStats: {fileID: 0}
+    m_TypeName: CharacterBehaviour+OnStatModify, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114640116097104660
 MonoBehaviour:
   m_ObjectHideFlags: 1

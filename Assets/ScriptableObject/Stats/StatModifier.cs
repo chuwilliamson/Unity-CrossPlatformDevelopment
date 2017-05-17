@@ -21,13 +21,13 @@ public abstract class StatModifier : ScriptableObject
     /// <summary>
     /// The effected stat type to modify.
     /// </summary>
-    public StatType EffectedStatType;
+    public Stat EffectedStat;
 
     /// <summary>
     /// The mod created to modify the stat.
     /// </summary>
     [HideInInspector]
-    public Modifier TheMod;
+    public RPGStats.Modifier mod;
 
     /// <summary>
     /// The mod type.

@@ -31,11 +31,7 @@ public class DataController : ScriptableSingleton<DataController>
     private static string path;
     private static int numsaves = 0;
     public static void Save<T>(T data, string profilename = "") where T : ScriptableObject
-    {
-        
-        
-
-        
+    {        
         path = Application.dataPath + "/StreamingAssets/";
         var files = System.IO.Directory.GetFiles(path, "*.json").ToList();
         numsaves = files.Count;

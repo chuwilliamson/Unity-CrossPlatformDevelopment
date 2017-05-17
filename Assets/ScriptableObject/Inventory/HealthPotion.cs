@@ -6,14 +6,12 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="Items/Potions/HealthPotions")]
 public class HealthPotion : Potion
 {
-    public string statToModify = "Health";
-    public GenericModifier healthMod;
-    public int Value;
+    public Modifier modifier;
     public override void Initialize(GameObject obj)
     {
         base.Initialize(obj);
-        healthMod = Instantiate(healthMod);
-        healthMod.Initialize(obj);
+        modifier = Instantiate(modifier);
+        modifier.Initialize(obj);
     }
 
     public override void Execute()
@@ -22,8 +20,7 @@ public class HealthPotion : Potion
     }
     public override void Consume(GameObject owner)
     {
-        owner.GetComponent<PlayerBehaviour>().ModifyStat(healthMod.ModType.ToString(), healthMod.TheMod);
-        
+        owner.GetComponent<CharacterBehaviour>().ModifyStat(modifier.EffectedStat, modifier.mod);
     }
     
 }

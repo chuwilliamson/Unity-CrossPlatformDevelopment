@@ -11,4 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b881f17dbf624dc40b758291a7827ad7, type: 3}
   m_Name: BackPackConfig
   m_EditorClassIdentifier: 
-  Items: []
+  Items:
+  - {fileID: 11400000, guid: c8e5241122006d5459357c59950ce3e0, type: 2}
+  - {fileID: 11400000, guid: 74e96f62622c4d64f93b70669304b2ee, type: 2}

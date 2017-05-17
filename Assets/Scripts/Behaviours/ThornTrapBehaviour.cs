@@ -2,8 +2,8 @@
 
 public class ThornTrapBehaviour : MonoBehaviour
 {
-    private GenericModifier RUNTIME_MOD;
-    public GenericModifier ThornModConfig;
+    private Modifier RUNTIME_MOD;
+    public Modifier ThornModConfig;
     
     public void Initialize()
     {
@@ -13,8 +13,7 @@ public class ThornTrapBehaviour : MonoBehaviour
 
     public void DoDamage(GameObject go)
     {
-        Debug.Log("collide with player");
-        go.GetComponent<PlayerBehaviour>().ModifyStat(RUNTIME_MOD.EffectedStatType.ToString(), RUNTIME_MOD.TheMod);
+        go.GetComponent<PlayerBehaviour>().ModifyStat(RUNTIME_MOD.EffectedStat, RUNTIME_MOD.mod);
         Destroy(gameObject);
     }
 }

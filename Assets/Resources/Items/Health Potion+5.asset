@@ -16,4 +16,3 @@ MonoBehaviour:
   ItemSprite: {fileID: 21300000, guid: 05e167214b72ce04e8c8cc10c1a57f16, type: 3}
   statToModify: Health
   healthMod: {fileID: 11400000, guid: dfc3334f609316444af8a147194bfc3f, type: 2}
-  Value: 0

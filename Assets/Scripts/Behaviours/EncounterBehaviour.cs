@@ -3,38 +3,31 @@
 [RequireComponent(typeof(Collider2D))]
 public class EncounterBehaviour : MonoBehaviour
 {
-    public Encounter encounter;
+    public Encounter Encounter;
 
     //use this for initialization
     private void Start()
     {
-        encounter.Initialize(this.gameObject);
+        Encounter.Initialize(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
-        {
-            encounter.EncounterStart();
-        }
+        if (other.tag != "Player") return;
+        Encounter.EncounterStart();
+        Encounter.EncounterStart(other.gameObject);
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if(other.tag == "Player")
-        {
-            encounter.EncounterUnderway();
-        }
+        if (other.tag != "Player") return;
+        Encounter.EncounterUnderway();
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
-        {
-            if (encounter.Contained)
-            {
-                encounter.EncounterEnd();
-            }
-        }
+        if (other.tag != "Player") return;
+        if (!Encounter.Contained) return;
+        Encounter.EncounterEnd();
     }
 }

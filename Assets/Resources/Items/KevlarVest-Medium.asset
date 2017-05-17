@@ -8,13 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99f72233fc16e1a4098330a7d53fcbff, type: 3}
-  m_Name: Shrinking Shield
+  m_Script: {fileID: 11500000, guid: dcd4e84a59433094ea3eb7195fd4db98, type: 3}
+  m_Name: KevlarVest-Medium
   m_EditorClassIdentifier: 
+  _itemName: KevlarVest
   DisplayName: 
-  ItemSprite: {fileID: 0}
-  Damage: 0
-  ShieldGrowth: 0.5
-  MaxScale: {x: 0, y: 0, z: 0}
-  InitialScale: {x: 0, y: 0, z: 0}
-  isBlocking: 0
+  ItemSprite: {fileID: 21300008, guid: 87efaf20c96bd46b2a6e7bf4d4d3fd57, type: 3}
+  ArmorRating: 25
