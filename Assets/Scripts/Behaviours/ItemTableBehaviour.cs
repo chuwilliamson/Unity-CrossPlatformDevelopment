@@ -38,6 +38,8 @@ public class ItemTableBehaviour : MonoBehaviour
 
             itemObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 10f, ForceMode2D.Impulse);
             GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 127);
+            GetComponent<BoxCollider2D>().enabled = false;
+            itemObject.hideFlags = HideFlags.HideInHierarchy;
             Destroy(gameObject, 1);
         }
     }
