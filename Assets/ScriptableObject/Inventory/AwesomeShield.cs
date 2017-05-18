@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Items/Shields/Awesome Shield")]
-public class AwesomeShield : ShieldConfig
+public class AwesomeShield : Shield
 {
     public Vector3 MaxScale;
     public Vector3 InitialScale;
@@ -26,6 +26,11 @@ public class AwesomeShield : ShieldConfig
 
         this._owner.transform.localScale = InitialScale;
         isBlocking = false;
+    }
+
+    public override void Execute()
+    {
+        throw new System.NotImplementedException();
     }
 
     public override void Initialize(GameObject obj)
