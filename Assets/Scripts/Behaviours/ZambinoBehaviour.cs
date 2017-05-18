@@ -6,7 +6,6 @@ public class ZambinoBehaviour : CharacterBehaviour
 {
     public GameObject PlayerGameObject;
     public Rigidbody2D rb;
-    public Sensor sensor;
     private void Start()
     {
         PlayerGameObject = GameObject.FindGameObjectWithTag("Player");
