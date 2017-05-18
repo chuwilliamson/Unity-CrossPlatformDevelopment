@@ -22,7 +22,7 @@ public class ItemBehaviour : MonoBehaviour
     {
         if (_initialized)
         {
-            Debug.LogWarning("attempting to initialize an already initialized item behaviour");
+            Debug.LogWarning("Attempting to initialize an already initialized item behaviour");
             return;
         }
 
