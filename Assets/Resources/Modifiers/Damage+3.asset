@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c369bcf98e9ce4d9b433b33ecf497b, type: 3}
+  m_Name: Damage+3
+  m_EditorClassIdentifier: 
+  EffectedStat: {fileID: 11400000, guid: e9a5aebd17170cc4db0784f2cca8c848, type: 2}
+  mod:
+    stat: 
+    type: 
+    value: 0
+  ModType: 0
+  ModifiedValue: -3

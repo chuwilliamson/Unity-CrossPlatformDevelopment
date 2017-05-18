@@ -26,7 +26,7 @@ public class ShootTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(PlayerInput.isInputFire)
             currentWeapon.Execute();
      
         if(Input.GetKeyDown(KeyCode.Q))

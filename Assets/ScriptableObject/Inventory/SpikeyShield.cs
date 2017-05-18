@@ -11,7 +11,7 @@ public class SpikeyShield : ShieldConfig
     public override void Block(GameObject blockedObject)
     {
         if(blockedObject.GetComponentInParent<CharacterBehaviour>())
-            blockedObject.GetComponentInParent<CharacterBehaviour>().ModifyStat(_StatModifier.EffectedStatType.ToString(), _StatModifier.TheMod);
+            blockedObject.GetComponentInParent<CharacterBehaviour>().ModifyStat(_StatModifier.EffectedStat, _StatModifier.mod);
     }
 
     public override void StopBlock()
@@ -27,5 +27,5 @@ public class SpikeyShield : ShieldConfig
         obj.GetComponent<Anima2D.SpriteMeshInstance>().spriteMesh = spikeyShieldMesh;
     }
 
-    public GenericModifier _StatModifier;
+    public Modifier _StatModifier;
 }

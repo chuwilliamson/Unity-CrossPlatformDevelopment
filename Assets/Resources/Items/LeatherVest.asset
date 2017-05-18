@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcd4e84a59433094ea3eb7195fd4db98, type: 3}
   m_Name: LeatherVest
   m_EditorClassIdentifier: 
-  ID: 12976
-  Name: LeatherVest
-  sprite: {fileID: 21300050, guid: fff926cb349c5b04781611a6f0919977, type: 3}
+  _itemName: KevlarVest
+  DisplayName: 
+  ItemSprite: {fileID: 21300028, guid: dd105a39e474c4706aba36b8be4febd9, type: 3}
   ArmorRating: 25

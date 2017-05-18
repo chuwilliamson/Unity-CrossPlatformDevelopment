@@ -8,7 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b881f17dbf624dc40b758291a7827ad7, type: 3}
-  m_Name: AwesomePack
+  m_Script: {fileID: 11500000, guid: 7a361b491b9e000409cfeac725989fff, type: 3}
+  m_Name: Health
   m_EditorClassIdentifier: 
-  Items: []
+  _baseValue: 0
+  Name: 
+  Value: 0

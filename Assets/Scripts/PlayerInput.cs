@@ -16,11 +16,21 @@ public class PlayerInput : MonoBehaviour
         }
     }
 
+    public static bool isInputFire
+    {
+        get { return Input.GetButtonDown(Strings.XBOX_Y); }
+    }
     public static bool isInputBlock
     {
         get { return Input.GetButton(Strings.LEFTBUMPER); }
     }
 
+    public static bool isInputSwap
+    {
+        get;set;
+    }
+
+    
     public static bool isInputCrouch
     {
         get { return Input.GetAxis(Strings.LEFTVERTICAL) < 0; }

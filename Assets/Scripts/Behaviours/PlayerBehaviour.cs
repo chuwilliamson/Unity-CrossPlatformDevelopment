@@ -1,70 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
 using RPGStats;
-using ScriptableAssets;
 using UnityEngine;
-using UnityEngine.Events;
-
+using System.Linq;
 public class PlayerBehaviour : CharacterBehaviour
 {
-
-    [Serializable]
-    public class OnStatModify : UnityEvent<string> { }
-
-    [Serializable]
-    public class OnHealthChange : UnityEvent<int> { }
-
-    private int modcount;
-    private List<int> timedMods;
-    public OnHealthChange onHealthChange = new OnHealthChange();
-    public OnStatModify onStatModify = new OnStatModify();
-    public Stats PlayerStats;
 
     //TODO : ADD THE TIMERFOR DEBUFFS AND DAMAGE OVER TIME, MAKE AN OBJECT TO HOLD THE ID OF THE MOD AND THE TIME TILL IT NEEDS TO GO AWAY
 
     void Awake()
     {
-        if (PlayerStats == null)
+        if (CharacterStats == null)
         {
-            Debug.LogWarning("you have not assigned a stats reference object");
-            return;
+            Debug.LogWarning("You have not assigned a stats reference object... creating.");
+            CharacterStats = Resources.Load<Stats>(@"Stats\PlayerStats");
         }
-
-        var newstats = Instantiate(PlayerStats);
-        PlayerStats = newstats;
+        
+        GameState.Instance._player = new GameState.PlayerInfo(CharacterStats) { Name = name };
     }
 
     void Start()
     {
         onStatModify.Invoke("");
     }
-
-    public void ModifyStatOverTime(string statName, Modifier mod, float duration)
+    
+    public override void ModifyStat(Stat stat, RPGStats.Modifier mod)
     {
-        var valids = new List<string>(Enum.GetNames(typeof(StatType)));
-        if (!valids.Contains(statName)) return;
-        PlayerStats.AddModifier(modcount++, mod);
-        timedMods.Add(modcount);
-
-        if (statName == "Health")
-            onHealthChange.Invoke(PlayerStats[statName].Value);
-        onStatModify.Invoke(statName);
-    }
-
-    public override void ModifyStat(string statName, Modifier mod)
-    {
-        var valids = new List<string>(Enum.GetNames(typeof(StatType)));
-        if (!valids.Contains(statName))
+        if (!this.CharacterStats.GetStat(stat.Name))
         {
-            Debug.LogWarningFormat("stat:: {0}, is not a valid stat to modify", statName);
+            Debug.LogWarningFormat("stat:: {0}, is not a valid stat to modify", stat);
             return;
         }
 
-        PlayerStats.AddModifier(modcount++, mod);
+        CharacterStats.AddModifier(modcount++, mod);
 
-        if (statName == "Health")
-            onHealthChange.Invoke(PlayerStats[statName].Value);
-        onStatModify.Invoke(statName);
+        if (stat.Name == "Health")
+            onHealthChange.Invoke(CharacterStats[stat.Name].Value);
+        onStatModify.Invoke(stat.Name);
     }
 
+    public void ClearAll()
+    {
+        CharacterStats.ClearModifiers();
+        onHealthChange.Invoke(CharacterStats["Health"].Value);
+    }
+    
 }

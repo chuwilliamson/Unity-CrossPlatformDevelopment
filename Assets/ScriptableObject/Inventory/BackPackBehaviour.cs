@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Linq;
 
 public class BackPackBehaviour : MonoBehaviour
 {
-
     public BackPack backPack_config;
+    [HideInInspector]
     public BackPack backPack_runtime;
 
     public OnBackPackAddItem onBackPackAddItem = new OnBackPackAddItem();
@@ -30,7 +31,7 @@ public class BackPackBehaviour : MonoBehaviour
     public void Initialize(BackPack config)
     {
         Items = new List<Item>();
-        backPack_config = config;
+        backPack_config = config ?? Resources.Load<BackPack>(@"Items\BackPackConfig");
         backPack_runtime = Instantiate(backPack_config);
         foreach(var item in backPack_config.Items)
         {
@@ -38,11 +39,11 @@ public class BackPackBehaviour : MonoBehaviour
             runtimeitem.Initialize(null);
             AddToPack(runtimeitem);
         }
+        onBackPackChange.Invoke(backPack_runtime);
     }
 
     public bool AddToPack(Item item)
     {
-        Debug.Log("add item " + item._itemName);
         Items.Add(item);
         backPack_runtime.Items = Items;
         onBackPackAddItem.Invoke(item);
@@ -52,14 +53,9 @@ public class BackPackBehaviour : MonoBehaviour
 
     public void Remove(Item item)
     {
-        Debug.Log("remove " + item);
-
         Items.Remove(item);
         backPack_runtime.Items = Items;
         onBackPackChange.Invoke(backPack_runtime);
-
-
-
     }
 
     public void RemoveAll()

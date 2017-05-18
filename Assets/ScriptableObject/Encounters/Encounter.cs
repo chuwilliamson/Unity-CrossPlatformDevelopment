@@ -16,25 +16,23 @@ public abstract class Encounter : ScriptableObject {
             return true;
         }
     }
-    
+
+    public virtual bool EncounterStart(GameObject obj)
+    {
+        return EncounterStart();
+    }
     public virtual bool EncounterStart()
     {
-        Debug.Log("EncounterStart Has Not Been Overridden");
-
         return true;
     }
 
     public virtual bool EncounterUnderway()
     {
-        Debug.Log("EncounterUnderway Has Not Been Overridden");
-
         return true;
     }
 
     public virtual bool EncounterEnd()
     {
-        Debug.Log("EncounterEnd Has Not Been Overridden");
-
         return true;
     }
 

@@ -16,4 +16,4 @@ MonoBehaviour:
   ItemSprite: {fileID: 0}
   Damage: 0
   ShieldGrowth: 0
-  _StatModifier: {fileID: 11400000, guid: cb2d91bbce8ac5f49820d7b060e8516c, type: 2}
+  _StatModifier: {fileID: 11400000, guid: c30f1889ed0369d4dbf6d5feab6f2460, type: 2}

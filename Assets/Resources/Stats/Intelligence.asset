@@ -8,10 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcd4e84a59433094ea3eb7195fd4db98, type: 3}
-  m_Name: KevlarVest
+  m_Script: {fileID: 11500000, guid: 7a361b491b9e000409cfeac725989fff, type: 3}
+  m_Name: Intelligence
   m_EditorClassIdentifier: 
-  ID: 13740
-  Name: KevlarVest
-  sprite: {fileID: 21300000, guid: 76c63d692afd6a44eb1d7a2a5c1d396b, type: 3}
-  ArmorRating: 0
+  _baseValue: 0
+  Name: 
+  Value: 0
