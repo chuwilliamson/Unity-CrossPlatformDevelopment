@@ -83,7 +83,7 @@ public class UIController : MonoBehaviour
         save_button = GameObject.Find("Button-Save").GetComponent<Button>();
         load_button = GameObject.Find("Button-Load").GetComponent<Button>();
         clear_button = GameObject.Find("Button-Clear").GetComponent<Button>();
-
+        _buttons = new List<Button>() { save_button, load_button, clear_button };
         clear_button.onClick.AddListener(delegate { backPackBehaviour.RemoveAll(); });
 
         save_button.onClick.AddListener(
@@ -97,7 +97,7 @@ public class UIController : MonoBehaviour
         {
             backPackBehaviour.Initialize(DataController.Load<BackPack>(savesDropdownList.captionText.text));
         });
-        _buttons = new List<Button>() { save_button, load_button, clear_button };
+        
     }
 
     public void UpdateSavesDropdown()
