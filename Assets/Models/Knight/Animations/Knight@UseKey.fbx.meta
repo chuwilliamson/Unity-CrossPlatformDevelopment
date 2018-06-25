@@ -279,11 +279,21 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName: 
+    motionNodeName: <Root Transform>
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'Knight_Spine_01SHJnt' has translation animation
+      that will be discarded.\n\t'Knight_Spine_02SHJnt' has translation animation
+      that will be discarded.\n\t'Knight_Spine_03SHJnt' has translation animation
+      that will be discarded.\n\t'Knight_Spine_03SHJnt' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Knight_Spine_04SHJnt'
+      has translation animation that will be discarded.\n\t'Knight_Spine_TopSHJnt'
+      has translation animation that will be discarded.\n\t'Knight_Spine_TopSHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Knight_Neck_01SHJnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
