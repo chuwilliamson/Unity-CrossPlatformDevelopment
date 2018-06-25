@@ -1,21 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 namespace AIE
 {
-    public class PlayerMovementBehaviour : MonoBehaviour
+    public class PlayerMovementBehaviour : MovementBehaviour
     {
+        private CharacterController controller;
+        public float Speed = 5.0f;
 
-        // Use this for initialization
-        void Start()
+        private void Start()
         {
-
+            //assign the charactercontroller reference
+            controller = GetComponent<CharacterController>();
         }
 
-        // Update is called once per frame
-        void Update()
+        /// <summary>
+        /// move the player by moving the Character Controller
+        /// </summary>
+        /// <param name="movement"></param>
+        public override void Move(Vector3 movement)
         {
-
+            controller.SimpleMove(movement * Speed);
         }
     }
 }

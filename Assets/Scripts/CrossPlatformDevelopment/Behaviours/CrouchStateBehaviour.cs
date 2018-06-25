@@ -7,12 +7,12 @@ public class CrouchStateBehaviour : StateMachineBehaviour
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        movespeed = animator.GetComponent<PlayerMovementBehaviour>().speed;
-        animator.GetComponent<PlayerMovementBehaviour>().speed = 5f;
+        movespeed = animator.GetComponent<RigidBodyPlayerMovementBehaviour>().speed;
+        animator.GetComponent<RigidBodyPlayerMovementBehaviour>().speed = 5f;
     }
 
     public override void OnStateExit(Animator animator, AnimatorStateInfo animatorStateInfo, int layerIndex)
     {
-        animator.GetComponent<PlayerMovementBehaviour>().speed = movespeed;
+        animator.GetComponent<RigidBodyPlayerMovementBehaviour>().speed = movespeed;
     }
 }

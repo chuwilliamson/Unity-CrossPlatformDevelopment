@@ -21,7 +21,7 @@ public class CombatShotgun : Weapon, IShootable
     {
         for(var i = 0; i < numPellets; i++)
         {
-            var pb = _owner.GetComponent<PlayerMovementBehaviour>();
+            var pb = _owner.GetComponent<RigidBodyPlayerMovementBehaviour>();
             var go = Instantiate(projectilePrefab, _owner.transform.position, _owner.transform.rotation);
             go.transform.localPosition += new Vector3(Mathf.Cos(i), Mathf.Sin(i), 0) + pb.Direction * 5f;
             var thisrb = go.GetComponent<Rigidbody2D>();

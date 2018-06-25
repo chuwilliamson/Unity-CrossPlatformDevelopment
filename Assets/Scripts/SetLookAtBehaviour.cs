@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+
 namespace AIE
 {
-
-
     public class SetLookAtBehaviour : MonoBehaviour
     {
         public Transform Target;
