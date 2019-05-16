@@ -2,7 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+namespace ScriptableObjects
 {
-
+    [CreateAssetMenu]
+    public class Item : ScriptableObject
+    {
+        public Sprite ItemImage;
+        public int GUID;
+        public string Name;
+    }
 }

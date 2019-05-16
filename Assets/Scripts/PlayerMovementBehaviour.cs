@@ -42,13 +42,11 @@ public class PlayerMovementBehaviour : MonoBehaviour
 
         if (shotFired)
         {
-            Barrel_Transform.GetComponentInChildren<Material>().color = Color.red;
             timer -= Time.deltaTime;
             if (timer < 0)
             {
                 timer = cooldownTime;
                 shotFired = false;
-                Barrel_Transform.GetComponentInChildren<Material>().color = Color.white;
             }
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.Events;
+using Object = System.Object;
 
 namespace Variables
 {
@@ -8,5 +9,7 @@ namespace Variables
     {
         [NonSerialized]
         public UnityEvent<Variable> onValueChange;
+
+        public object data;
     }
 }
