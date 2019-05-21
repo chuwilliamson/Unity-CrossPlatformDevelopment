@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
-  m_Name: Knife
+  m_Name: Apple
   m_EditorClassIdentifier: 
   item:
     GUID: 0
-    ItemImage: {fileID: 21300000, guid: c6df313a8a55b504aa072b653bba3cfa, type: 3}
+    ItemImage: {fileID: 21300000, guid: bf7e3fabc9f93554386198105a20afcc, type: 3}
     Name: 

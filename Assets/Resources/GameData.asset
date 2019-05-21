@@ -11,7 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bbf5609b9ecfc54a81c440db7fe1ef9, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
+  keyListVariable: {fileID: 11400000, guid: 0b8215a764029f94ea3a0b3ceda7233a, type: 2}
   keys:
-  - VariableList+Inventory
+  - 2426
+  - 3012
   values:
-  - '{"variables":[{"instanceID":2824},{"instanceID":2844},{"instanceID":2820},{"instanceID":2720}]}'
+  - '{"GUID":2426,"ItemImage":{"instanceID":3022},"Name":"Accessory"}'
+  - '{"GUID":3012,"ItemImage":{"instanceID":2888},"Name":"Apple"}'
