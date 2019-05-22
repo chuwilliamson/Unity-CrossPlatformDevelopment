@@ -1,0 +1,5454 @@
+fileFormatVersion: 2
+guid: d879c5ecb61c6b843ac6fd05628eb0d9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: '#2 - Transparent & Drop Shadow_0'
+    21300002: '#2 - Transparent & Drop Shadow_1'
+    21300004: '#2 - Transparent & Drop Shadow_2'
+    21300006: '#2 - Transparent & Drop Shadow_3'
+    21300008: '#2 - Transparent & Drop Shadow_4'
+    21300010: '#2 - Transparent & Drop Shadow_5'
+    21300012: '#2 - Transparent & Drop Shadow_6'
+    21300014: '#2 - Transparent & Drop Shadow_7'
+    21300016: '#2 - Transparent & Drop Shadow_8'
+    21300018: '#2 - Transparent & Drop Shadow_9'
+    21300020: '#2 - Transparent & Drop Shadow_10'
+    21300022: '#2 - Transparent & Drop Shadow_11'
+    21300024: '#2 - Transparent & Drop Shadow_12'
+    21300026: '#2 - Transparent & Drop Shadow_13'
+    21300028: '#2 - Transparent & Drop Shadow_14'
+    21300030: '#2 - Transparent & Drop Shadow_15'
+    21300032: '#2 - Transparent & Drop Shadow_16'
+    21300034: '#2 - Transparent & Drop Shadow_17'
+    21300036: '#2 - Transparent & Drop Shadow_18'
+    21300038: '#2 - Transparent & Drop Shadow_19'
+    21300040: '#2 - Transparent & Drop Shadow_20'
+    21300042: '#2 - Transparent & Drop Shadow_21'
+    21300044: '#2 - Transparent & Drop Shadow_22'
+    21300046: '#2 - Transparent & Drop Shadow_23'
+    21300048: '#2 - Transparent & Drop Shadow_24'
+    21300050: '#2 - Transparent & Drop Shadow_25'
+    21300052: '#2 - Transparent & Drop Shadow_26'
+    21300054: '#2 - Transparent & Drop Shadow_27'
+    21300056: '#2 - Transparent & Drop Shadow_28'
+    21300058: '#2 - Transparent & Drop Shadow_29'
+    21300060: '#2 - Transparent & Drop Shadow_30'
+    21300062: '#2 - Transparent & Drop Shadow_31'
+    21300064: '#2 - Transparent & Drop Shadow_32'
+    21300066: '#2 - Transparent & Drop Shadow_33'
+    21300068: '#2 - Transparent & Drop Shadow_34'
+    21300070: '#2 - Transparent & Drop Shadow_35'
+    21300072: '#2 - Transparent & Drop Shadow_36'
+    21300074: '#2 - Transparent & Drop Shadow_37'
+    21300076: '#2 - Transparent & Drop Shadow_38'
+    21300078: '#2 - Transparent & Drop Shadow_39'
+    21300080: '#2 - Transparent & Drop Shadow_40'
+    21300082: '#2 - Transparent & Drop Shadow_41'
+    21300084: '#2 - Transparent & Drop Shadow_42'
+    21300086: '#2 - Transparent & Drop Shadow_43'
+    21300088: '#2 - Transparent & Drop Shadow_44'
+    21300090: '#2 - Transparent & Drop Shadow_45'
+    21300092: '#2 - Transparent & Drop Shadow_46'
+    21300094: '#2 - Transparent & Drop Shadow_47'
+    21300096: '#2 - Transparent & Drop Shadow_48'
+    21300098: '#2 - Transparent & Drop Shadow_49'
+    21300100: '#2 - Transparent & Drop Shadow_50'
+    21300102: '#2 - Transparent & Drop Shadow_51'
+    21300104: '#2 - Transparent & Drop Shadow_52'
+    21300106: '#2 - Transparent & Drop Shadow_53'
+    21300108: '#2 - Transparent & Drop Shadow_54'
+    21300110: '#2 - Transparent & Drop Shadow_55'
+    21300112: '#2 - Transparent & Drop Shadow_56'
+    21300114: '#2 - Transparent & Drop Shadow_57'
+    21300116: '#2 - Transparent & Drop Shadow_58'
+    21300118: '#2 - Transparent & Drop Shadow_59'
+    21300120: '#2 - Transparent & Drop Shadow_60'
+    21300122: '#2 - Transparent & Drop Shadow_61'
+    21300124: '#2 - Transparent & Drop Shadow_62'
+    21300126: '#2 - Transparent & Drop Shadow_63'
+    21300128: '#2 - Transparent & Drop Shadow_64'
+    21300130: '#2 - Transparent & Drop Shadow_65'
+    21300132: '#2 - Transparent & Drop Shadow_66'
+    21300134: '#2 - Transparent & Drop Shadow_67'
+    21300136: '#2 - Transparent & Drop Shadow_68'
+    21300138: '#2 - Transparent & Drop Shadow_69'
+    21300140: '#2 - Transparent & Drop Shadow_70'
+    21300142: '#2 - Transparent & Drop Shadow_71'
+    21300144: '#2 - Transparent & Drop Shadow_72'
+    21300146: '#2 - Transparent & Drop Shadow_73'
+    21300148: '#2 - Transparent & Drop Shadow_74'
+    21300150: '#2 - Transparent & Drop Shadow_75'
+    21300152: '#2 - Transparent & Drop Shadow_76'
+    21300154: '#2 - Transparent & Drop Shadow_77'
+    21300156: '#2 - Transparent & Drop Shadow_78'
+    21300158: '#2 - Transparent & Drop Shadow_79'
+    21300160: '#2 - Transparent & Drop Shadow_80'
+    21300162: '#2 - Transparent & Drop Shadow_81'
+    21300164: '#2 - Transparent & Drop Shadow_82'
+    21300166: '#2 - Transparent & Drop Shadow_83'
+    21300168: '#2 - Transparent & Drop Shadow_84'
+    21300170: '#2 - Transparent & Drop Shadow_85'
+    21300172: '#2 - Transparent & Drop Shadow_86'
+    21300174: '#2 - Transparent & Drop Shadow_87'
+    21300176: '#2 - Transparent & Drop Shadow_88'
+    21300178: '#2 - Transparent & Drop Shadow_89'
+    21300180: '#2 - Transparent & Drop Shadow_90'
+    21300182: '#2 - Transparent & Drop Shadow_91'
+    21300184: '#2 - Transparent & Drop Shadow_92'
+    21300186: '#2 - Transparent & Drop Shadow_93'
+    21300188: '#2 - Transparent & Drop Shadow_94'
+    21300190: '#2 - Transparent & Drop Shadow_95'
+    21300192: '#2 - Transparent & Drop Shadow_96'
+    21300194: '#2 - Transparent & Drop Shadow_97'
+    21300196: '#2 - Transparent & Drop Shadow_98'
+    21300198: '#2 - Transparent & Drop Shadow_99'
+    21300200: '#2 - Transparent & Drop Shadow_100'
+    21300202: '#2 - Transparent & Drop Shadow_101'
+    21300204: '#2 - Transparent & Drop Shadow_102'
+    21300206: '#2 - Transparent & Drop Shadow_103'
+    21300208: '#2 - Transparent & Drop Shadow_104'
+    21300210: '#2 - Transparent & Drop Shadow_105'
+    21300212: '#2 - Transparent & Drop Shadow_106'
+    21300214: '#2 - Transparent & Drop Shadow_107'
+    21300216: '#2 - Transparent & Drop Shadow_108'
+    21300218: '#2 - Transparent & Drop Shadow_109'
+    21300220: '#2 - Transparent & Drop Shadow_110'
+    21300222: '#2 - Transparent & Drop Shadow_111'
+    21300224: '#2 - Transparent & Drop Shadow_112'
+    21300226: '#2 - Transparent & Drop Shadow_113'
+    21300228: '#2 - Transparent & Drop Shadow_114'
+    21300230: '#2 - Transparent & Drop Shadow_115'
+    21300232: '#2 - Transparent & Drop Shadow_116'
+    21300234: '#2 - Transparent & Drop Shadow_117'
+    21300236: '#2 - Transparent & Drop Shadow_118'
+    21300238: '#2 - Transparent & Drop Shadow_119'
+    21300240: '#2 - Transparent & Drop Shadow_120'
+    21300242: '#2 - Transparent & Drop Shadow_121'
+    21300244: '#2 - Transparent & Drop Shadow_122'
+    21300246: '#2 - Transparent & Drop Shadow_123'
+    21300248: '#2 - Transparent & Drop Shadow_124'
+    21300250: '#2 - Transparent & Drop Shadow_125'
+    21300252: '#2 - Transparent & Drop Shadow_126'
+    21300254: '#2 - Transparent & Drop Shadow_127'
+    21300256: '#2 - Transparent & Drop Shadow_128'
+    21300258: '#2 - Transparent & Drop Shadow_129'
+    21300260: '#2 - Transparent & Drop Shadow_130'
+    21300262: '#2 - Transparent & Drop Shadow_131'
+    21300264: '#2 - Transparent & Drop Shadow_132'
+    21300266: '#2 - Transparent & Drop Shadow_133'
+    21300268: '#2 - Transparent & Drop Shadow_134'
+    21300270: '#2 - Transparent & Drop Shadow_135'
+    21300272: '#2 - Transparent & Drop Shadow_136'
+    21300274: '#2 - Transparent & Drop Shadow_137'
+    21300276: '#2 - Transparent & Drop Shadow_138'
+    21300278: '#2 - Transparent & Drop Shadow_139'
+    21300280: '#2 - Transparent & Drop Shadow_140'
+    21300282: '#2 - Transparent & Drop Shadow_141'
+    21300284: '#2 - Transparent & Drop Shadow_142'
+    21300286: '#2 - Transparent & Drop Shadow_143'
+    21300288: '#2 - Transparent & Drop Shadow_144'
+    21300290: '#2 - Transparent & Drop Shadow_145'
+    21300292: '#2 - Transparent & Drop Shadow_146'
+    21300294: '#2 - Transparent & Drop Shadow_147'
+    21300296: '#2 - Transparent & Drop Shadow_148'
+    21300298: '#2 - Transparent & Drop Shadow_149'
+    21300300: '#2 - Transparent & Drop Shadow_150'
+    21300302: '#2 - Transparent & Drop Shadow_151'
+    21300304: '#2 - Transparent & Drop Shadow_152'
+    21300306: '#2 - Transparent & Drop Shadow_153'
+    21300308: '#2 - Transparent & Drop Shadow_154'
+    21300310: '#2 - Transparent & Drop Shadow_155'
+    21300312: '#2 - Transparent & Drop Shadow_156'
+    21300314: '#2 - Transparent & Drop Shadow_157'
+    21300316: '#2 - Transparent & Drop Shadow_158'
+    21300318: '#2 - Transparent & Drop Shadow_159'
+    21300320: '#2 - Transparent & Drop Shadow_160'
+    21300322: '#2 - Transparent & Drop Shadow_161'
+    21300324: '#2 - Transparent & Drop Shadow_162'
+    21300326: '#2 - Transparent & Drop Shadow_163'
+    21300328: '#2 - Transparent & Drop Shadow_164'
+    21300330: '#2 - Transparent & Drop Shadow_165'
+    21300332: '#2 - Transparent & Drop Shadow_166'
+    21300334: '#2 - Transparent & Drop Shadow_167'
+    21300336: '#2 - Transparent & Drop Shadow_168'
+    21300338: '#2 - Transparent & Drop Shadow_169'
+    21300340: '#2 - Transparent & Drop Shadow_170'
+    21300342: '#2 - Transparent & Drop Shadow_171'
+    21300344: '#2 - Transparent & Drop Shadow_172'
+    21300346: '#2 - Transparent & Drop Shadow_173'
+    21300348: '#2 - Transparent & Drop Shadow_174'
+    21300350: '#2 - Transparent & Drop Shadow_175'
+    21300352: '#2 - Transparent & Drop Shadow_176'
+    21300354: '#2 - Transparent & Drop Shadow_177'
+    21300356: '#2 - Transparent & Drop Shadow_178'
+    21300358: '#2 - Transparent & Drop Shadow_179'
+    21300360: '#2 - Transparent & Drop Shadow_180'
+    21300362: '#2 - Transparent & Drop Shadow_181'
+    21300364: '#2 - Transparent & Drop Shadow_182'
+    21300366: '#2 - Transparent & Drop Shadow_183'
+    21300368: '#2 - Transparent & Drop Shadow_184'
+    21300370: '#2 - Transparent & Drop Shadow_185'
+    21300372: '#2 - Transparent & Drop Shadow_186'
+    21300374: '#2 - Transparent & Drop Shadow_187'
+    21300376: '#2 - Transparent & Drop Shadow_188'
+    21300378: '#2 - Transparent & Drop Shadow_189'
+    21300380: '#2 - Transparent & Drop Shadow_190'
+    21300382: '#2 - Transparent & Drop Shadow_191'
+    21300384: '#2 - Transparent & Drop Shadow_192'
+    21300386: '#2 - Transparent & Drop Shadow_193'
+    21300388: '#2 - Transparent & Drop Shadow_194'
+    21300390: '#2 - Transparent & Drop Shadow_195'
+    21300392: '#2 - Transparent & Drop Shadow_196'
+    21300394: '#2 - Transparent & Drop Shadow_197'
+    21300396: '#2 - Transparent & Drop Shadow_198'
+    21300398: '#2 - Transparent & Drop Shadow_199'
+    21300400: '#2 - Transparent & Drop Shadow_200'
+    21300402: '#2 - Transparent & Drop Shadow_201'
+    21300404: '#2 - Transparent & Drop Shadow_202'
+    21300406: '#2 - Transparent & Drop Shadow_203'
+    21300408: '#2 - Transparent & Drop Shadow_204'
+    21300410: '#2 - Transparent & Drop Shadow_205'
+    21300412: '#2 - Transparent & Drop Shadow_206'
+    21300414: '#2 - Transparent & Drop Shadow_207'
+    21300416: '#2 - Transparent & Drop Shadow_208'
+    21300418: '#2 - Transparent & Drop Shadow_209'
+    21300420: '#2 - Transparent & Drop Shadow_210'
+    21300422: '#2 - Transparent & Drop Shadow_211'
+    21300424: '#2 - Transparent & Drop Shadow_212'
+    21300426: '#2 - Transparent & Drop Shadow_213'
+    21300428: '#2 - Transparent & Drop Shadow_214'
+    21300430: '#2 - Transparent & Drop Shadow_215'
+    21300432: '#2 - Transparent & Drop Shadow_216'
+    21300434: '#2 - Transparent & Drop Shadow_217'
+    21300436: '#2 - Transparent & Drop Shadow_218'
+    21300438: '#2 - Transparent & Drop Shadow_219'
+    21300440: '#2 - Transparent & Drop Shadow_220'
+    21300442: '#2 - Transparent & Drop Shadow_221'
+    21300444: '#2 - Transparent & Drop Shadow_222'
+    21300446: '#2 - Transparent & Drop Shadow_223'
+    21300448: '#2 - Transparent & Drop Shadow_224'
+    21300450: '#2 - Transparent & Drop Shadow_225'
+    21300452: '#2 - Transparent & Drop Shadow_226'
+    21300454: '#2 - Transparent & Drop Shadow_227'
+    21300456: '#2 - Transparent & Drop Shadow_228'
+    21300458: '#2 - Transparent & Drop Shadow_229'
+    21300460: '#2 - Transparent & Drop Shadow_230'
+    21300462: '#2 - Transparent & Drop Shadow_231'
+    21300464: '#2 - Transparent & Drop Shadow_232'
+    21300466: '#2 - Transparent & Drop Shadow_233'
+    21300468: '#2 - Transparent & Drop Shadow_234'
+    21300470: '#2 - Transparent & Drop Shadow_235'
+    21300472: '#2 - Transparent & Drop Shadow_236'
+    21300474: '#2 - Transparent & Drop Shadow_237'
+    21300476: '#2 - Transparent & Drop Shadow_238'
+    21300478: '#2 - Transparent & Drop Shadow_239'
+    21300480: '#2 - Transparent & Drop Shadow_240'
+    21300482: '#2 - Transparent & Drop Shadow_241'
+    21300484: '#2 - Transparent & Drop Shadow_242'
+    21300486: '#2 - Transparent & Drop Shadow_243'
+    21300488: '#2 - Transparent & Drop Shadow_244'
+    21300490: '#2 - Transparent & Drop Shadow_245'
+    21300492: '#2 - Transparent & Drop Shadow_246'
+    21300494: '#2 - Transparent & Drop Shadow_247'
+    21300496: '#2 - Transparent & Drop Shadow_248'
+    21300498: '#2 - Transparent & Drop Shadow_249'
+    21300500: '#2 - Transparent & Drop Shadow_250'
+    21300502: '#2 - Transparent & Drop Shadow_251'
+    21300504: '#2 - Transparent & Drop Shadow_252'
+    21300506: '#2 - Transparent & Drop Shadow_253'
+    21300508: '#2 - Transparent & Drop Shadow_254'
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_0'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 609
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbf8e739d9e45e4c96522d926cba13e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_1'
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 609
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 945f831ff2c1d4e40989bb119588c6f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_2'
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 611
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3aa58b5ed18e56438e7697b43006f00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_3'
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 610
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f051d5063c4695439ce80e4401dc3a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_4'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 611
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c024dae4021fab4a8c5925101891852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_5'
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 627
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27661a5c62c618448a44b53c346e74d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_6'
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 629
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8d81b98bc528e47ab3c177e4754665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_7'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 609
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ba86ef920043840899d4ec97847655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_8'
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 612
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e5583e5b46b614b8146f560770ee4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_9'
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 609
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace3e7de4827a7748bc1b04d73f3bebe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_10'
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 609
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d731ce550bd894ab7b3f8789c6819a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_11'
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 618
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa95b387cca4d143a63538f63ca2e11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_12'
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 609
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e980d64d7acedf14c814b712a2ccca57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_13'
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 618
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7cf46ddea56cc4285d6142b69dd2b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_14'
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 622
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58370516af99da546a8eb7e2a7b2dea9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_15'
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 612
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a622b42f5b05b948b40bdc6b1999d83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_16'
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 611
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f69aa53f642e756479bd37df47236908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_17'
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 578
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153336d48ff957946a88daa174f9dcf8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_18'
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 579
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476b3c932c52a86459a160ce2297c13a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_19'
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 578
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e66a50544eb164e82973a27400b233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_20'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 578
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9941c30e493fe4390bfc8c625888fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_21'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 577
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c880ba08a1c229f4eb7a063b13b5f5fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_22'
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 546
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f38778e4dc51c84eb5f5a8928881d5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_23'
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 546
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6802dbeeb56f8645a87878a53386c3d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_24'
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 545
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f52ce4159524464d842acbad8b672ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_25'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 546
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9defa485297d784fb9aa2b812f150b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_26'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 545
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4e581ab681fc846a9cfedb6e2929e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_27'
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 545
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcbbbccf4ab0cc4795895a042a39d28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_28'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 545
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd98590b215cce4aa2faaaacd4462e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_29'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 513
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9aae2897f72cf4b9d9fe6fae331821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_30'
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 514
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99dd18d31676caa4ebe1d38c90da9fb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_31'
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 513
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac27e2fc26508a847b85f410589ca2f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_32'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 513
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeab35f5e1ac58b48af38d856a13e394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_33'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 513
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55324bb81aaa77849a6e4cab8f99bedf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_34'
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 513
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1db75395a9a92f4089e7207a50038cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_35'
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 513
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9393487260fbe9145a437ad96c5c5a54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_36'
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 514
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3692b41741cbd84b89dec8f57fe7201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_37'
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 513
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d08f0d1a2e38f4cb5b52196b59bd8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_38'
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 513
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b311134e9e1701e43bd54b64ef122fc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_39'
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 513
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41096a5c7ce843a499bd7b6bc6e566d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_40'
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 513
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0a44d2a657dba41b7a8c2dd49d91e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_41'
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 514
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4682a1d4d636364e933ae1f19ce4204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_42'
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 513
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ede26ea8c5f9848b6e112d499c5590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_43'
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 513
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1000ba1764cb4234da547b74bf0810df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_44'
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 513
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ccdbaad49ccdfb43995adc38e7d717b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_45'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 485
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c8e581d40ff424ba10cbaf55b1773f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_46'
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 482
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b442a7825349e4546acb732fbfbb6bb1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_47'
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 481
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d075f2a6ced815443842705b6bbb345a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_48'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 483
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a83b4fdc4d9d94284b355fa2b00de4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_49'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 481
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf8a588d0f326347a002872077812b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_50'
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 481
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23a2fade60ec7243bb49a6bba17c174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_51'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 481
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a656a8c3b933f84391e880daeed2c47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_52'
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 481
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffef91e44d5bb0a439392096f46c982e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_53'
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 504
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb0b37ac6d780d49a8da0e9ec9e2335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_54'
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 483
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd5d2185d7539b49b63125e31f1ac03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_55'
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 451
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c4053b510b4b44ebbff5da41ec4f40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_56'
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 449
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c795aedbeee8d849b8c13849af5ce69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_57'
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 449
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feec15c7e3690454090b6cf11d9d86d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_58'
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 450
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa4e281f86a88940b0ebf99f6492c44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_59'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 449
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833b5baa78373884f82b04808ac3a8e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_60'
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 448
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e0b31a2955c0748813b60a0f5991c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_61'
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 448
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99729040a642672459570f40516bd788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_62'
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 448
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68acbeee5ac8224cbbf634d86f2e40c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_63'
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 449
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e021deb75b668624587d1b2ed7abf3cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_64'
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 448
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 313f078a449e1ef4188424cc15051c46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_65'
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 448
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f0fb8b38457fc4a84a3e31bec595f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_66'
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 448
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e72317f15e03845b73378d39ce7e2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_67'
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 448
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2ac0a116e7f254cb0ac546d7174205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_68'
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 448
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd156831820d1e14989ad9467acd6149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_69'
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 448
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a4b2fabc9e61d448779cddc8ef8bc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_70'
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 452
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba9c15279e400e4b8173b684307a18c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_71'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 418
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0628cfbaf2a816d46a41eea23b2fb34f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_72'
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 417
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa51d1e220e3e942afb84bc9e5b1f3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_73'
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 417
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0aeef851c0d3874eb11705f774c2b44
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_74'
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 417
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8bc249e74f3df48bc08f9f1c88864c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_75'
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 417
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5368c7072126e84e82a7b6f40c6b11e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_76'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 417
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d2e8b18ab1d9749ae99466bce43b86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_77'
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 417
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695cb8f1a76353245a30882470db2ee3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_78'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 418
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7677b79355e1d741b84e8ac262747fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_79'
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 417
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2593cec2b65edc54d8465ccb31d75bbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_80'
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 417
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de8cd71a8ed60f4fbf438f38a35b2bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_81'
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 417
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a456162a70f316449bd1ec4276fc4037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_82'
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 417
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9710f2575363cb4aa7a9fbc6d96e930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_83'
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 417
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4714d85a6cc100a4480f60d71ab2240e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_84'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 387
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9d78adcc4d93f4a9d621ec5a4b4e0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_85'
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 385
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4655aeec20d09084d9502c65f67c2b54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_86'
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 385
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2655f219016914f478bb5a3c747cd036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_87'
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 385
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4e2374bdbaaaa4dab9101d27753682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_88'
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 385
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f353e17809b564f97b698382439092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_89'
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 381
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adcd10b42ef4914cb7cf81aa9c5cd21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_90'
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 385
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4b5c7ccf0e06a49aaccbeceb0a67ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_91'
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 387
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b7fd136615b5c47b157be871a88532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_92'
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 385
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6895a195ca5a16543a46eeaf8027578c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_93'
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 385
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9a5dccd3fb8de4ba992bf830e29f02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_94'
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 385
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bac2aba09159544aa13dd674b3e69f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_95'
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 387
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76da6812be8dd443b72a505e415bea0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_96'
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 389
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5488114980c571e4f8f7bbd67bd77a69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_97'
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 386
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d64f347831e5c640aa9dc80beb8f794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_98'
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 385
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ec99250a03e784fba8e642d3d73d05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_99'
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 389
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0564f271cab4f469f7c3f30eed5f14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_100'
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 353
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2d3462ccc1e7b459ef2ad028521937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_101'
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 353
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de73436735b97c74580fb30ecc7fa55b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_102'
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 355
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67c20c238e1a354b8022a7fbfe99cc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_103'
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 355
+        width: 29
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e674574cf3f6925438ae3498b73eb6bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_104'
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 358
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990fba1eb1af1cf47b6e54470cac9c51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_105'
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 353
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9dcb2ee213cef418b47ecf052871cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_106'
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 353
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6942701bb51ede4a883c5d14457d5d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_107'
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 353
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69348000f4e9ca4788a4f10462f257a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_108'
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 354
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4e3fa7ee124b145904ee2c201fa598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_109'
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 353
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed89c8b1bafae7459f9cb804536fcaf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_110'
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 321
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17294a09fc51f1c4489e9cc7158435d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_111'
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 321
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1acce6fc1f70d747b9f08ffafed25e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_112'
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 321
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6131f5f77466cb449a3a7ba3849976db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_113'
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 321
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cadcd9a05c0d2b40a00c533bc47745d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_114'
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 321
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dedc8a3fde35645b28589725a5cc8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_115'
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 321
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb285dab721a164389bcc6bfe366a8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_116'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 321
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516753c3a2025f5459107ea2612876fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_117'
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 321
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa52c992780baee47a66efdd83c0070d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_118'
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 321
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea08b8b0f742ca43913bf5a80e15355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_119'
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 321
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2937788d15d071a4393c6de1603ba68f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_120'
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 321
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f429030ca280a4d87735d1c960833a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_121'
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 321
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58baf9f1d8ac7b447993311cce1b341d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_122'
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 321
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1a8cf55637ea84292ae1bbbac466bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_123'
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 321
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b0e6e0ab0562846b806f3fe47e2428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_124'
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 321
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0cbcae7f93d1942ab6feeb983da86a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_125'
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 321
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e5f6dea98437446b3f983cd3b87fb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_126'
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 289
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09316400ca0ba646864ef1e6f938857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_127'
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 289
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69446aee23bfdf048ab969909f964d40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_128'
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 289
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3efdfcd95fe5fc489ed9dc0b6be6955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_129'
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 290
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103ce6b07b0d4af468c7fb13ccab6ec1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_130'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 291
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396cb53c475b6604f98d2d66426ab93a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_131'
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 289
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4fd06b3fdde8e4fb546b979410be71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_132'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 289
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8806262cdbcf3428e83c6deb8f655c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_133'
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 289
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b8a6549f7a73244aed57ff137184af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_134'
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 289
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8720b2fc9c12c4e43abc88caed150ab9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_135'
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 289
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc61c7ddf0487a47b6dd33d146d28f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_136'
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 289
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b8dce70823759428062f7d7ccbae4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_137'
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 290
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901ae4caf65841c40bdde442d5cd29d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_138'
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 291
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3df53591655ad4fa6d6d27c9635e89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_139'
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 289
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695d0b489b484f64a8628b8d5a75626e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_140'
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 292
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac009e0bb9915a4a9b99a6576c6b661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_141'
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 289
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75497ac6920534d4a8b13f565f6eca06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_142'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 257
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637eb312c62d35d4981bd659f9720872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_143'
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 257
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac20ccf5b275a1b43bf9207571148094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_144'
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 257
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738943b2287b51c439c6139f4e0a9243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_145'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 258
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864c4aba1b7702f44b03b9baf7e2608e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_146'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 257
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001516fdae25b18438df864cd2b65cd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_147'
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 259
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d82cfdcb91f2c4fae57c4d774a143c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_148'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 257
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110853abe3dbcaa4b847012f30267388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_149'
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 258
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9da636405ba32842888d31c74898ae7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_150'
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 260
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fd525177d3e7346b689b46ee723fbf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_151'
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 258
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc4144fb13482747b691aefbe0b7c30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_152'
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 257
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353def6e76a2936499b48dc963b0c6ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_153'
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 257
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea8ca4e8713afa438bc4a75b49aa493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_154'
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 257
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18846b2dcab6fb9488c463afd586c2c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_155'
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 257
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f6a9e938d9c4f4fbb8d72ff0c7b61f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_156'
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 257
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c5702dae567304caad53c40d91e5f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_157'
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 257
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56f158bcd39d05b4b92b5fb06be1cabd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_158'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 225
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d9eb7b59be7364ca7d7cbf6e52cbc4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_159'
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 225
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984036adaa966e14e97f92dd489308bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_160'
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 225
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02337b68a7a03a546a5cc2bf94a21b5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_161'
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 225
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6dd881b0ecc7a34081c578b42336e64
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_162'
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 225
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48197dcdca5cb774b9ec217dae036a30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_163'
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 225
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce157d993bf3804da7c4e44efc9fd59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_164'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 225
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8c195a453617f479f19e21d203df41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_165'
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 228
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68229d8728f0b9048a5254bed4ca30a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_166'
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 225
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae9d43e37e644c149b25af2c3093a925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_167'
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 225
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ca70f32e685e14e9b305c4b3679a11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_168'
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 225
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71872e08fd03fcc4ea36b3a53eb17dd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_169'
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 225
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60abf7295af80cb4ebdc3afd4bde1557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_170'
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 225
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8ccd6f7158cf74ab2ff426041ffd14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_171'
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 240
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989ee5183db3b9f48994ec81d584aaf7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_172'
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 230
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6b2443ae817dc47b1bcb8e0d06046c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_173'
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 225
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eae2687046fe0b4fad661174d3d2878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_174'
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 225
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68781c4f036a3cd48a66b4cbbdde5f89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_175'
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 225
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91c3390fdab524b40a5c1c9039f4ca40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_176'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 193
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e150bf5f8ea21418514a9ad4443833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_177'
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 193
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c7e3b5a26369b4fba873ead7a3eabe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_178'
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 193
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f48e15f2a02b5f46b1690196c1af0c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_179'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 193
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cbed48b474d8340b7e97f6c15555b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_180'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 193
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df41d08634dd0e4c8bd0b990b8339ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_181'
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 193
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03ae1f25d6f2485418f3899023f9e138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_182'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 193
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148ff111ff0e98946a3d85ab2ca71a8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_183'
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 193
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e291337b69fe4e445a1bff98f66519d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_184'
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 194
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c6fe4ffe3bd7c4da91a306fec63d73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_185'
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 196
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b21d77775a9dce4cad605a4524f8831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_186'
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 194
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa50a718919eb1b4e99cfa0ff66c7a96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_187'
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 193
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843b73d9aee7fa141b95d248a38ed3c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_188'
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 194
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d2e595b328ae942a34751210350d31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_189'
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 193
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0dcc84b2ecd01419d6ff3aaf1be60e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_190'
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 192
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77896132f79af743a17d5309f561cb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_191'
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 194
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4115e8310dedebf47a89326106fb9ff3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_192'
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 161
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2de51f5ffa7124f932d3ab2a2755f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_193'
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 162
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ca30955e87da148ac52edb6af1d80b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_194'
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 161
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6199959fe99e642ad2f0cd031b9bd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_195'
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 161
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c08b3a6e9e2f284f84a9dbbdb9bc1ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_196'
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 162
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e79a3aa74dd2054aa054cb05bba2f9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_197'
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 161
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e26980c0624cb4da859a9fb90e9c62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_198'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 161
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83ec0fcc851638418b305bebb0ce5c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_199'
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 162
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1733f4bef50c72459b74a482500228e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_200'
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 161
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0691c0f255489e4cb59943a6359301a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_201'
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 161
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4468a29ab33ddd43a916f59e8f2be02
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_202'
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 161
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3345c383ff39f45b559c1ef9a65056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_203'
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 160
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d5d4e0fe45a48499878e6fbeaabe4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_204'
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 161
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7516c725d5dcdc34fba0c83f06574430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_205'
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 160
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cda1847b5960a649ae48db9154f3a33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_206'
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 161
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bf8253eb7e1854fa6bc0c4ddf433bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_207'
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 160
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e9dad64e06e234da5fe1f906314005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_208'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 129
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be844b417858ab641acd7d416d6afa2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_209'
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 130
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 806cf751be0eaec499533fa49d9e8029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_210'
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 133
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24cc0d7c9aece1d458a04d5d52107763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_211'
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 131
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2b8bb0118fc914cac570c1901fca56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_212'
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 130
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d49ec9864f88d4885cb12a6837cd07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_213'
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 129
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cc75652ea0df24dad96d43c6d434cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_214'
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 128
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a9cb37f5bfaf94392d6ac0c1445f03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_215'
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 128
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d7ecda988bf7f41be77cd0fa24d87e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_216'
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 128
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f84cc8a4721d841bf550ce5c508a8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_217'
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 129
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38914e1efa0c8a74289861a72db7b244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_218'
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 129
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403433de95a921c46bcabdf0ccb58ac6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_219'
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 129
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3f93b4558a3744f93b30fd829c282f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_220'
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 128
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d79f2498ffb9364d96cbda4dc6b63e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_221'
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 128
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339b597d544b5c34e8ac7816a1c20336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_222'
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 131
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f5c728c865c2840a63893c4394cbe7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_223'
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 97
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a23a3329e28d3847a82b4154f3cd002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_224'
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 97
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149f6fd3d531ff44f9e44cec7e97549b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_225'
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 97
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a51e99179b6884ba1f9c601f7f5541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_226'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 97
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d56283f2215854c8c3d9857a170a2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_227'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 97
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08a3d94ef4ae3d44a090aa49abca9a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_228'
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 97
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c268f7a8837dc84389c24cc09a88b42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_229'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 98
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7766562bc80ae5e40b12a5ce9e63f491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_230'
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 98
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42392d8fb357ca94ca7982771808a44f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_231'
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 97
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2699213c832ed44a6b644031cd3fe2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_232'
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 97
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e36f6d56a23c649ae2c3f590bbe536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_233'
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 97
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99810c4fa04e78b48b669cd0dc096240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_234'
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 100
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d0d34f97886304580920655b80f6a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_235'
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 98
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747e739f3b535fc4d8f5780d37149511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_236'
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 98
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c9c6cc036d49240bf44e99f165a9e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_237'
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 97
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0ec834355841c4eac7e64dc1445367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_238'
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 65
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a246898a428434c9b7928906cb1c0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_239'
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 65
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d67df58ff7ec7f4c9c1257c0bdc0a59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_240'
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 65
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada0cd4bc96c3da49a21b71b0bacc331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_241'
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 68
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630a5a76be2a4c3459494e5f34e703aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_242'
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 68
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d90e9ef99423c45b65b966c02d5c3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_243'
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 65
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216edf94f669bca4fa76f9a054000e39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_244'
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 65
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603e4d6aac96d4a47955d3bd006dc013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_245'
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 65
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dff0ccbf0f38c4f93412f79858f266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_246'
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 65
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68f479bcf7343d4fba260653a0a1bc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_247'
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 67
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800e31ca0c231174aaca88d2f781a0df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_248'
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 65
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd850179590446246b9bd227471bceae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_249'
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 34
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b986fd203ae5ae408046841d6649c5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_250'
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 34
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4f659bc994d474e8274db16ff65253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_251'
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c96762b4c600d4aa9638af7d0dc41c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_252'
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 34
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af0690c5f51e31429efffd849c2fea1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_253'
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 34
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86644ea2a839d764881548fc9e341a49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: '#2 - Transparent & Drop Shadow_254'
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 34
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bb612dcdd65ea41ac0482a2b52e7ac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f4d75fa3bdc526847aca75680ed09806
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

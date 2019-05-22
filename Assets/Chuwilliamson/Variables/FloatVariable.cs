@@ -6,28 +6,28 @@ namespace Chuwilliamson.Variables
     public class FloatVariable : ScriptableObject
     {
 #if UNITY_EDITOR
-        [Multiline] public string DeveloperDescription = "";
+        [Multiline] public string developerDescription = "";
 #endif
-        public float Value;
+        public float value;
 
         public void SetValue(float value)
         {
-            Value = value;
+            this.value = value;
         }
 
         public void SetValue(FloatVariable value)
         {
-            Value = value.Value;
+            this.value = value.value;
         }
 
         public void ApplyChange(float amount)
         {
-            Value += amount;
+            value += amount;
         }
 
         public void ApplyChange(FloatVariable amount)
         {
-            Value += amount.Value;
+            value += amount.value;
         }
     }
 }

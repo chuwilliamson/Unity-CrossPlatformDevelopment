@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Knife
   m_EditorClassIdentifier: 
   item:
-    GUID: 0
-    ItemImage: {fileID: 21300000, guid: c6df313a8a55b504aa072b653bba3cfa, type: 3}
-    Name: 
+    guid: 2636
+    itemImage: {fileID: 21300124, guid: d879c5ecb61c6b843ac6fd05628eb0d9, type: 3}
+    name: Knife
+  success: 1

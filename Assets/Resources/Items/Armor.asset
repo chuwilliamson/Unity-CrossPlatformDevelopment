@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Armor
   m_EditorClassIdentifier: 
   item:
-    GUID: 0
-    ItemImage: {fileID: 21300000, guid: bd8ffdab148176948aec6f209690cb57, type: 3}
-    Name: 
+    guid: 2644
+    itemImage: {fileID: 21300184, guid: d879c5ecb61c6b843ac6fd05628eb0d9, type: 3}
+    name: Armor
+  success: 1

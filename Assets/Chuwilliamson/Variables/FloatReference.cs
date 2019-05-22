@@ -12,9 +12,9 @@ namespace Chuwilliamson.Variables
     [Serializable]
     public class FloatReference
     {
-        public float ConstantValue;
-        public bool UseConstant = true;
-        public FloatVariable Variable;
+        public float constantValue;
+        public bool useConstant = true;
+        public FloatVariable variable;
 
         public FloatReference()
         {
@@ -22,13 +22,13 @@ namespace Chuwilliamson.Variables
 
         public FloatReference(float value)
         {
-            UseConstant = true;
-            ConstantValue = value;
+            useConstant = true;
+            constantValue = value;
         }
 
         public float Value
         {
-            get { return UseConstant ? ConstantValue : Variable.Value; }
+            get { return useConstant ? constantValue : variable.value; }
         }
 
         public static implicit operator float(FloatReference reference)

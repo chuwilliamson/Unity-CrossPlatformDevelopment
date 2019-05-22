@@ -1,10 +1,13 @@
-﻿using UnityEngine;
+﻿using Chuwilliamson.Attributes;
+using UnityEngine;
 
 namespace Chuwilliamson.GameEventSystem
 {
     public class GameEventListener : MonoBehaviour, IListener
     {
-        [SerializeField] private GameEvent gameEvent;
+        [SerializeField] [ScriptVariable(Verbose = true)]
+        private GameEvent gameEvent;
+
         [SerializeField] private GameEventResponse response;
 
         public void Subscribe()

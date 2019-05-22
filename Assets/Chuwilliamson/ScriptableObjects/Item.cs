@@ -16,13 +16,13 @@ namespace Chuwilliamson.ScriptableObjects
 
         public override string ToString()
         {
-            return string.Format("Item: {0}, GUID: {1}, ItemImage: {2}", item.Name, item.GUID, item);
+            return string.Format("Item: {0}, GUID: {1}, ItemImage: {2}", item.name, item.guid, item);
         }
 
         private void OnEnable()
         {
-            item.GUID = GetInstanceID();
-            item.Name = name;
+            item.guid = GetInstanceID();
+            item.name = name;
 
             var obj = GameData.Load(item, GetInstanceID().ToString());
             if (obj != null)
@@ -34,7 +34,7 @@ namespace Chuwilliamson.ScriptableObjects
 
         private void OnDisable()
         {
-            if (item != null) GameData.Save(item, item.GUID.ToString());
+            if (item != null) GameData.Save(item, item.guid.ToString());
         }
     }
 }

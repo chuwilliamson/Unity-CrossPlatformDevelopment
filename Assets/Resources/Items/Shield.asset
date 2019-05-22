@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: Shield
   m_EditorClassIdentifier: 
   item:
-    GUID: 0
-    ItemImage: {fileID: 21300000, guid: e7c3bdca2266a95468abfc9f40933a50, type: 3}
-    Name: 
+    guid: 2656
+    itemImage: {fileID: 21300142, guid: d879c5ecb61c6b843ac6fd05628eb0d9, type: 3}
+    name: Shield
+  success: 1

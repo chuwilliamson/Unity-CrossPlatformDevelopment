@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Chuwilliamson.GameEventSystem;
 using UnityEngine;
 
 namespace Chuwilliamson.ScriptableObjects
@@ -8,39 +9,51 @@ namespace Chuwilliamson.ScriptableObjects
     {
         [SerializeField] public List<Serialization.Item> itemList;
 
+        public GameEvent OnInventoryChanged;
+
+        private List<Serialization.Item> ItemList
+        {
+            get { return itemList; }
+            set
+            {
+                OnInventoryChanged.Raise(this);
+                itemList = value;
+            }
+        }
+
         private void OnEnable()
         {
-            var obj = GameData.Load(itemList, GetInstanceID().ToString());
+            var obj = GameData.Load(ItemList, GetInstanceID().ToString());
 
             if (obj == null || obj.Count <= 0)
-                GameData.Save(itemList, GetInstanceID().ToString());
+                GameData.Save(ItemList, GetInstanceID().ToString());
             else
-                itemList = GameData.Load(itemList, GetInstanceID().ToString());
+                ItemList = GameData.Load(ItemList, GetInstanceID().ToString());
         }
 
         private void OnDisable()
         {
-            GameData.Save(itemList, GetInstanceID().ToString());
+            GameData.Save(ItemList, GetInstanceID().ToString());
         }
 
         public void AddItem(Serialization.Item item)
         {
-            itemList.Add(item);
+            ItemList.Add(item);
         }
 
         public void AddItem(Item item)
         {
-            itemList.Add(item.Value);
+            ItemList.Add(item.Value);
         }
 
         public void RemoveItem(Serialization.Item item)
         {
-            itemList.Remove(item);
+            ItemList.Remove(item);
         }
 
         public void RemoveItem(Item item)
         {
-            itemList.Remove(item.Value);
+            ItemList.Remove(item.Value);
         }
     }
 }

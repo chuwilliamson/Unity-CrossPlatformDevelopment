@@ -2,6 +2,7 @@
 using System.IO;
 using System.Linq;
 using Chuwilliamson.Variables;
+using UnityEditor;
 using UnityEngine;
 
 namespace Chuwilliamson.ScriptableObjects
@@ -11,18 +12,26 @@ namespace Chuwilliamson.ScriptableObjects
     {
         private static GameData _instance;
         private static string[] _paths;
-
-        private Dictionary<string, string> _saveTable = new Dictionary<string, string>();
         public StringListVariable keyListVariable;
         public List<string> keys = new List<string>();
+
+        public Dictionary<string, string> saveTable;
         public List<string> values = new List<string>();
 
         public static GameData Instance
         {
             get
             {
-                if (!_instance)
-                    _instance = Resources.FindObjectsOfTypeAll<GameData>().FirstOrDefault();
+                if (_instance) return _instance;
+                _instance = Resources.Load<GameData>("GameData");
+#if UNITY_EDITOR
+                var vars = AssetDatabase.FindAssets("t:GameData")
+                    .Select(AssetDatabase.GUIDToAssetPath)
+                    .Select(AssetDatabase.LoadAssetAtPath<GameData>)
+                    .Where(b => b).OrderBy(v => v.name).ToArray();
+                _instance = vars.FirstOrDefault();
+                Debug.Log(_instance);
+#endif
 
                 return _instance;
             }
@@ -30,7 +39,7 @@ namespace Chuwilliamson.ScriptableObjects
 
         public static Dictionary<string, string> SaveData
         {
-            get { return Instance._saveTable; }
+            get { return Instance.saveTable; }
         }
 
         public void OnBeforeSerialize() //before we hit play mode 
@@ -38,7 +47,7 @@ namespace Chuwilliamson.ScriptableObjects
             keys.Clear();
             values.Clear();
 
-            foreach (var kvp in _saveTable)
+            foreach (var kvp in saveTable)
             {
                 keys.Add(kvp.Key);
                 values.Add(kvp.Value);
@@ -48,9 +57,9 @@ namespace Chuwilliamson.ScriptableObjects
 
         public void OnAfterDeserialize()
         {
-            _saveTable = new Dictionary<string, string>();
+            saveTable = new Dictionary<string, string>();
             for (var i = 0; i < keys.Count; i++)
-                _saveTable.Add(keys[i], values[i]);
+                saveTable.Add(keys[i], values[i]);
         }
 
         private void OnEnable()
@@ -60,13 +69,14 @@ namespace Chuwilliamson.ScriptableObjects
                 Path.Combine(Application.streamingAssetsPath, "keys.json"),
                 Path.Combine(Application.streamingAssetsPath, "values.json")
             };
-            foreach (var kvp in _saveTable)
+
+            foreach (var kvp in saveTable)
             {
                 keys.Add(kvp.Key);
                 values.Add(kvp.Value);
             }
 
-            keyListVariable.Value = keys;
+            keyListVariable.value = Instance.keys;
         }
 
         private void OnDisable()
@@ -105,11 +115,9 @@ namespace Chuwilliamson.ScriptableObjects
         {
             var json = "";
             var returnvalue = obj;
-            if (SaveData.TryGetValue(keyname, out json))
-            {
-                returnvalue = JsonUtility.FromJson<T>(json);
-                Debug.Log("loading " + obj);
-            }
+            if (!SaveData.TryGetValue(keyname, out json)) return returnvalue;
+            returnvalue = JsonUtility.FromJson<T>(json);
+            Debug.Log("loading " + obj);
 
 
             return returnvalue;
