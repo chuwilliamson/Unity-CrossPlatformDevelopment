@@ -15,13 +15,5 @@ MonoBehaviour:
   itemsRef: {fileID: 11400000, guid: 498476c2548e8834087244ea154c4a3d, type: 2}
   levelRef: {fileID: 11400000, guid: f5a026cd15889ae4d93dd071e3d9abc5, type: 2}
   experience: 0
-  itemList:
-  - {fileID: 11400000, guid: b8894430cb831954cb13272c7bcf9a1b, type: 2}
-  - {fileID: 11400000, guid: b8894430cb831954cb13272c7bcf9a1b, type: 2}
-  - {fileID: 11400000, guid: b8894430cb831954cb13272c7bcf9a1b, type: 2}
-  - {fileID: 11400000, guid: b8894430cb831954cb13272c7bcf9a1b, type: 2}
-  - {fileID: 11400000, guid: b8894430cb831954cb13272c7bcf9a1b, type: 2}
-  - {fileID: 11400000, guid: b8894430cb831954cb13272c7bcf9a1b, type: 2}
-  - {fileID: 11400000, guid: b8894430cb831954cb13272c7bcf9a1b, type: 2}
-  - {fileID: 11400000, guid: b8894430cb831954cb13272c7bcf9a1b, type: 2}
+  itemList: []
   level: 1

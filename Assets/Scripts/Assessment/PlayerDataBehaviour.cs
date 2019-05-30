@@ -12,12 +12,12 @@ namespace Assessment
         /// assign via inspector
         /// </summary>
         [SerializeField, Tooltip("Assign this in inspector")]
-        private PlayerData playerDataRef;
         private PlayerData _runtimeInstance;
+        
         // Use this for initialization
         void Start()
         {
-            _runtimeInstance = Instantiate(playerDataRef);
+            _runtimeInstance = Instantiate(_runtimeInstance);
             _runtimeInstance.name = "PlayerData";
         }
 
