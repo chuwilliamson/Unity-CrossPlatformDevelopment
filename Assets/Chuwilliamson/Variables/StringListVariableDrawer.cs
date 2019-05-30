@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 
 namespace Chuwilliamson.Variables
 {
@@ -11,3 +12,4 @@ namespace Chuwilliamson.Variables
         }
     }
 }
+#endif

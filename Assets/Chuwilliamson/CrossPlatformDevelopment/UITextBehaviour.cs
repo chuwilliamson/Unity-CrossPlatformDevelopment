@@ -1,4 +1,5 @@
-﻿using Chuwilliamson.Variables;
+﻿using Chuwilliamson.Attributes;
+using Chuwilliamson.Variables;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,14 +11,12 @@ namespace Chuwilliamson.CrossPlatformDevelopment
         private Text _textComponent;
         public Variable variableRef;
 
-        private void Awake()
+        private void OnEnable()
         {
             _textComponent = GetComponent<Text>();
+            var prefix = _textComponent.text;
+            variableRef.OnValueChange.AddListener((obj) => { _textComponent.text = prefix + obj.ToString();});
         }
 
-        private void Update()
-        {
-            _textComponent.text = variableRef.ToString();
-        }
     }
 }

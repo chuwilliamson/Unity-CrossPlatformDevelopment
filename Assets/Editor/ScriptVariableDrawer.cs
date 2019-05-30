@@ -21,7 +21,7 @@ namespace Attributes
         // Draw the property inside the given rect
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
         {
-            var vars = ScriptVariableAttribute.Vars.Where(t => t.GetType() == fieldInfo.FieldType).ToList();
+            var vars = ScriptVariableAttribute.Vars.Where(t => t.GetType().IsAssignableFrom(fieldInfo.FieldType)).ToList();
             var selected = vars.FindIndex(stat => property.objectReferenceValue == stat);
             var contents = vars.Select(n => new GUIContent(n.name)).ToArray();
 

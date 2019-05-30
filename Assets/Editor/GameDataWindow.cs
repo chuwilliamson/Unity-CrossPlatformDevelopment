@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
-using Object = System.Object;
+using Object = UnityEngine.Object;
 
 namespace Chuwilliamson.ScriptableObjects
 {
@@ -26,13 +27,13 @@ namespace Chuwilliamson.ScriptableObjects
             var path = Path.Combine(Application.streamingAssetsPath, fileName);
             if (data == null)
                 return;
-            
+
             File.WriteAllText(path, JsonUtility.ToJson(data));
         }
 
         public static T Load<T>(string fileName) where T : ScriptableObject
         {
-            
+
             var path = Path.Combine(Application.streamingAssetsPath, fileName);
             var json = File.ReadAllText(path);
             var obj = CreateInstance<T>();
@@ -43,8 +44,8 @@ namespace Chuwilliamson.ScriptableObjects
 
         private void OnGUI()
         {
-            
-            
+
+
             _lookup = EditorGUILayout.DelayedTextField("lookup ", _lookup);
             if (GUILayout.Button("Save")) Save("GameSettings.json", this);
 
@@ -54,9 +55,25 @@ namespace Chuwilliamson.ScriptableObjects
                 this._lookup = obj._lookup;
             }
 
-            DrawDictionary(new SerializedObject(GameData.Instance), _lookup);
+            if (GUILayout.Button("MakeThemAndSave"))
+            {
+                var assets = AssetDatabase.FindAssets("t: Sprite", new[] { "Assets/Resources/RPG_inventory_icons" })
+                    .Select(AssetDatabase.GUIDToAssetPath).Select(AssetDatabase.LoadAssetAtPath<Sprite>).ToArray();
+
+                foreach (var asset in assets)
+                {
+                    var obj = CreateInstance<Item>();
+                    obj.Value = new Serialization.Item { itemImage = asset };
+                    var path = Path.Combine("Assets/Chuwilliamson/Resources/Items/", asset.name + ".asset");
+                    var loaded = AssetDatabase.LoadAssetAtPath<Item>(path);
+                    AssetDatabase.CreateAsset(obj, path);
+
+                }
+
+            }
         }
 
+        public List<Texture2D> images = new List<Texture2D>();
         public bool DrawDictionary(SerializedObject so, string propertyName)
         {
             if (propertyName == null)
@@ -75,12 +92,12 @@ namespace Chuwilliamson.ScriptableObjects
                     var gcKey = new GUIContent("Key: " + kvp.Key);
                     var gcValue = new GUIContent("Value: " + kvp.Value);
                     EditorGUILayout.BeginHorizontal();
-                    
+
                     EditorGUILayout.LabelField(gcKey, GUILayout.Width(100));
                     EditorGUILayout.LabelField(gcValue);
                     EditorGUILayout.EndHorizontal();
                     EditorGUI.indentLevel--;
-                    
+
                 }
             }
             else

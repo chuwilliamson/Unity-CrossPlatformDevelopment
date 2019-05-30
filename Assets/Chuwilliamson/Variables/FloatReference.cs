@@ -26,10 +26,7 @@ namespace Chuwilliamson.Variables
             constantValue = value;
         }
 
-        public float Value
-        {
-            get { return useConstant ? constantValue : variable.value; }
-        }
+        public float Value => useConstant ? constantValue : variable.value;
 
         public static implicit operator float(FloatReference reference)
         {

@@ -7,6 +7,9 @@ namespace Chuwilliamson.Variables
     public class Variable : ScriptableObject
     {
         public object data;
-        [NonSerialized] public UnityEvent<Variable> OnValueChange;
+        [NonSerialized] public VariableChangeEvent OnValueChange = new VariableChangeEvent();
     }
+
+    [System.Serializable]
+    public class VariableChangeEvent : UnityEvent<Variable> { }
 }

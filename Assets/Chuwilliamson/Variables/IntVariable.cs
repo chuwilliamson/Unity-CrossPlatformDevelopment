@@ -7,10 +7,15 @@ namespace Chuwilliamson.Variables
     {
         [SerializeField] private int value;
 
+
         public int Value
         {
             get { return value; }
-            set { this.value = value; }
+            set
+            {
+                this.value = value;
+                OnValueChange?.Invoke(this);
+            }
         }
 
         public override string ToString()

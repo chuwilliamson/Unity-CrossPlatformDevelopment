@@ -6,10 +6,7 @@ namespace Chuwilliamson.Variables
     {
         [SerializeField] private bool value;
 
-        public bool Value
-        {
-            get { return value; }
-        }
+        public bool Value => value;
 
         public override string ToString()
         {

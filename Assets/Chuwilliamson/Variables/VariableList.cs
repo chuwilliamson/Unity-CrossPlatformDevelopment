@@ -13,7 +13,7 @@ namespace Chuwilliamson.Variables
         private void OnEnable()
         {
             var inv = GameData.Load(inventory, GetInstanceID().ToString());
-            if (inv == null || inv.Size > 0)
+            if (inv == null || inv.Count > 0)
                 GameData.Save(inventory, GetInstanceID().ToString());
             else
                 GameData.Load(inventory, GetInstanceID().ToString());
@@ -24,15 +24,5 @@ namespace Chuwilliamson.Variables
             GameData.Save(inventory, GetInstanceID().ToString());
         }
 
-        [Serializable]
-        public class Inventory
-        {
-            public List<Variable> variables;
-
-            public int Size
-            {
-                get { return variables.Count; }
-            }
-        }
     }
 }

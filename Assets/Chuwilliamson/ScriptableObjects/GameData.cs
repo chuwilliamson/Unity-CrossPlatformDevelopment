@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Chuwilliamson.Serialization;
 using Chuwilliamson.Variables;
 using UnityEditor;
 using UnityEngine;
@@ -8,15 +9,17 @@ using UnityEngine;
 namespace Chuwilliamson.ScriptableObjects
 {
     [CreateAssetMenu]
-    public class GameData : ScriptableObject, ISerializationCallbackReceiver
+    public class GameData : ScriptableObject
     {
         private static GameData _instance;
         private static string[] _paths;
         public StringListVariable keyListVariable;
-        public List<string> keys = new List<string>();
+        public ICollection<string> Keys => saveTable.Keys;
 
-        public Dictionary<string, string> saveTable;
-        public List<string> values = new List<string>();
+        [SerializeField]
+        private Dictionary saveTable = new Dictionary();
+
+        public ICollection<string> Values => saveTable.Values;
 
         public static GameData Instance
         {
@@ -37,59 +40,67 @@ namespace Chuwilliamson.ScriptableObjects
             }
         }
 
-        public static Dictionary<string, string> SaveData
-        {
-            get { return Instance.saveTable; }
-        }
-
-        public void OnBeforeSerialize() //before we hit play mode 
-        {
-            keys.Clear();
-            values.Clear();
-
-            foreach (var kvp in saveTable)
-            {
-                keys.Add(kvp.Key);
-                values.Add(kvp.Value);
-            }
-        }
+        public static Dictionary SaveData => Instance.saveTable;
 
 
-        public void OnAfterDeserialize()
-        {
-            saveTable = new Dictionary<string, string>();
-            for (var i = 0; i < keys.Count; i++)
-                saveTable.Add(keys[i], values[i]);
-        }
+
 
         private void OnEnable()
         {
+#if UNITY_EDITOR
+            if (Instance != null)
+            {
+                if (Instance != this)
+                    AssetDatabase.DeleteAsset(AssetDatabase.GUIDToAssetPath(GetInstanceID().ToString()));
+            }
+            else
+            {
+                _instance = this;
+            }
+#endif
+
             _paths = new[]
             {
-                Path.Combine(Application.streamingAssetsPath, "keys.json"),
-                Path.Combine(Application.streamingAssetsPath, "values.json")
+                Path.Combine(Application.streamingAssetsPath, "savetable.json"),
             };
 
-            foreach (var kvp in saveTable)
+            if (keyListVariable == null)
             {
-                keys.Add(kvp.Key);
-                values.Add(kvp.Value);
+#if UNITY_EDITOR
+
+                AssetDatabase.CreateAsset(CreateInstance<StringListVariable>(),
+                    "Assets/Resources/KeyListVariable.asset");
+                keyListVariable =
+                    AssetDatabase.LoadAssetAtPath<StringListVariable>("Assets/Resources/KeyListVariable.asset");
+                AssetDatabase.SaveAssets();
+                AssetDatabase.Refresh();
+#endif
             }
 
-            keyListVariable.value = Instance.keys;
-        }
+            if (keyListVariable != null)
+            {
+                keyListVariable.value = new List<string>(Instance.Keys);
+            }
 
+            if (File.Exists(_paths[0]))
+            {
+                savecopy = JsonUtility.FromJson<Dictionary>(File.ReadAllText(_paths[0]));
+            }
+
+        }
+        [SerializeField]
+        private Dictionary savecopy;
         private void OnDisable()
         {
             SaveToFile();
         }
 
-        public static void SaveToFile()
+        public void SaveToFile()
         {
             var jsons = new[]
             {
-                JsonUtility.ToJson(Instance.keys),
-                JsonUtility.ToJson(Instance.values)
+                JsonUtility.ToJson(saveTable, true),
+
             };
 
             for (var i = 0; i < _paths.Length; i++)
@@ -108,7 +119,7 @@ namespace Chuwilliamson.ScriptableObjects
             if (SaveData.TryGetValue(keyname, out json))
                 SaveData[keyname] = json;
             else
-                SaveData.Add(keyname, JsonUtility.ToJson(obj));
+                SaveData.Add(keyname, JsonUtility.ToJson(obj, prettyPrint:true));
         }
 
         public static T Load<T>(T obj, string keyname)

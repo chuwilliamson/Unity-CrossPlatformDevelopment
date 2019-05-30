@@ -1,5 +1,6 @@
 ﻿namespace Chuwilliamson
 {
+    [System.Serializable]
     public class Modifier
     {
         public ModType ModType { get; set; }
