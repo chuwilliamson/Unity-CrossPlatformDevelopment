@@ -58,19 +58,5 @@ namespace Assessment
     }
 
 #if UNITY_EDITOR
-    [CustomEditor(typeof(Global))]
-    public class GlobalInspector : Editor
-    {
-        public override void OnInspectorGUI()
-        {
-            base.OnInspectorGUI();
-
-            if (GUILayout.Button("Execute a Function"))
-            {
-                var mt = (Global) target;
-                mt.Response.Invoke();
-            }
-        }
-    }
 #endif
 }
