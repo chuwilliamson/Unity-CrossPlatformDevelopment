@@ -1,0 +1,450 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!49 &4900000
+TextAsset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Items
+  m_Script: "<b>The following file contains these assets</b> \n Type: Name\nSprite:apple\r\n\r\nSprite:armor\r\n\r\nSprite:axe\r\n\r\nSprite:b_t_01\r\n\r\nSprite:bag\r\n\r\nSprite:belts\r\n\r\nSprite:book\r\n\r\nSprite:boots\r\n\r\nSprite:bracers\r\n\r\nSprite:cloaks\r\n\r\nSprite:coins\r\n\r\nSprite:f\r\n\r\nSprite:gem\r\n\r\nSprite:gloves\r\n\r\nSprite:helmets\r\n\r\nSprite:hp\r\n\r\nSprite:ingots\r\n\r\nSprite:Meat\r\n\r\nSprite:mp\r\n\r\nSprite:necklace\r\n\r\nSprite:pants\r\n\r\nSprite:rings\r\n\r\nSprite:scroll\r\n\r\nSprite:shield\r\n\r\nSprite:shoulders\r\n\r\nSprite:sword\r\n"
+--- !u!74 &74606040844329282
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 6
+  m_Legacy: 0
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_AdditiveReferencePoseClip: {fileID: 0}
+    m_AdditiveReferencePoseTime: 0
+    m_StartTime: 0
+    m_StopTime: 1
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_HasAdditiveReferencePose: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
+  m_HasMotionFloatCurves: 0
+  m_GenerateMotionCurves: 0
+  m_Events: []
+--- !u!114 &114068806260726462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: book
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202556
+    itemImage: {fileID: 21300000, guid: ae496f5dad56ea645b72d374a0376368, type: 3}
+    name: book
+--- !u!114 &114135733958456546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: belts
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202554
+    itemImage: {fileID: 21300000, guid: da09804303305f542a686824630e7269, type: 3}
+    name: belts
+--- !u!114 &114158514603757072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: shoulders
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202592
+    itemImage: {fileID: 21300000, guid: f126324fd2486a641842ea5a8244c2d1, type: 3}
+    name: shoulders
+--- !u!114 &114167704554177740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: necklace
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202582
+    itemImage: {fileID: 21300000, guid: 0e123cfdc54a3ca4684816a34167a566, type: 3}
+    name: necklace
+--- !u!114 &114190691550157128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: sword
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202594
+    itemImage: {fileID: 21300000, guid: 5fd50594014b70e48bd6993443d46b32, type: 3}
+    name: sword
+--- !u!114 &114217660826748470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: coins
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202564
+    itemImage: {fileID: 21300000, guid: 3676a0b185daeb54fb257f700ba7ead4, type: 3}
+    name: coins
+--- !u!114 &114226296827187560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: apple
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202544
+    itemImage: {fileID: 21300000, guid: 5d9ba4e7d0964044ea54abe409d81dfd, type: 3}
+    name: apple
+--- !u!114 &114366672699860770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: rings
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202586
+    itemImage: {fileID: 21300000, guid: 970324311431c794ca338446ea889948, type: 3}
+    name: rings
+--- !u!114 &114372815094531012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: boots
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202558
+    itemImage: {fileID: 21300000, guid: e420c5bc93cb2604695a893500c897e3, type: 3}
+    name: boots
+--- !u!114 &114395983742026818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: armor
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202546
+    itemImage: {fileID: 21300000, guid: 2f1eaeeaad36ee5469eff7ff158f37ba, type: 3}
+    name: armor
+--- !u!114 &114408410157983256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: hp
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202574
+    itemImage: {fileID: 21300000, guid: e52ea25af699fd445b7046374f81a5b9, type: 3}
+    name: hp
+--- !u!114 &114449403331339132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: bag
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202552
+    itemImage: {fileID: 21300000, guid: fe025e83f69d0b54f8a4fe3c7c128fd7, type: 3}
+    name: bag
+--- !u!114 &114455215211759618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: helmets
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202572
+    itemImage: {fileID: 21300000, guid: fd6e4fc32c78509458fc45ea4a478ba8, type: 3}
+    name: helmets
+--- !u!114 &114468414684330500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: b_t_01
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202550
+    itemImage: {fileID: 21300000, guid: 5d7061fc7da05ce44add317708ec7215, type: 3}
+    name: b_t_01
+--- !u!114 &114601941164969090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: gem
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202568
+    itemImage: {fileID: 21300000, guid: e7d29a79bc7fae248887c8a08a160303, type: 3}
+    name: gem
+--- !u!114 &114681521830269510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: cloaks
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202562
+    itemImage: {fileID: 21300000, guid: 6fc27c9d7fc2d9448af6851bf935e6d2, type: 3}
+    name: cloaks
+--- !u!114 &114769816040048040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: shield
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202590
+    itemImage: {fileID: 21300000, guid: b97c91e8b348f3f4ebdc11f5c82182cd, type: 3}
+    name: shield
+--- !u!114 &114777624555525578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: scroll
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202588
+    itemImage: {fileID: 21300000, guid: db427fab3e94daf4caa704d9314a77a1, type: 3}
+    name: scroll
+--- !u!114 &114803880822848286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: ingots
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202576
+    itemImage: {fileID: 21300000, guid: 3e4fcc84a0ac95b429c56452575f6021, type: 3}
+    name: ingots
+--- !u!114 &114838768538149768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: axe
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202548
+    itemImage: {fileID: 21300000, guid: 172774604c1bee84185a69041576525b, type: 3}
+    name: axe
+--- !u!114 &114843756832750390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: mp
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202580
+    itemImage: {fileID: 21300000, guid: 6592b916f86b19e428db6f6847c7b6dd, type: 3}
+    name: mp
+--- !u!114 &114850595023792522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: Meat
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202578
+    itemImage: {fileID: 21300000, guid: 4a39cb4b272639541b7bd5ac0649acf7, type: 3}
+    name: Meat
+--- !u!114 &114859128580879088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: f
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202566
+    itemImage: {fileID: 21300000, guid: ed1074391f139544d941ae0870937dc0, type: 3}
+    name: f
+--- !u!114 &114878841877959372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: gloves
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202570
+    itemImage: {fileID: 21300000, guid: d4f5634edede200468fc1ccf30e6f3a1, type: 3}
+    name: gloves
+--- !u!114 &114986245820216904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: bracers
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202560
+    itemImage: {fileID: 21300000, guid: 70a77abda853dd941a0c8debf1de9b04, type: 3}
+    name: bracers
+--- !u!114 &114988569212107808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c6f7c51cc302804196e823481f888a8, type: 3}
+  m_Name: pants
+  m_EditorClassIdentifier: 
+  item:
+    guid: -202584
+    itemImage: {fileID: 21300000, guid: b8fb302c5768e334ca82005f50e58121, type: 3}
+    name: pants

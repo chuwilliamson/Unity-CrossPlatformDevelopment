@@ -1,0 +1,108 @@
+{
+    "m_MinSize": {
+        "x": 100.0,
+        "y": 100.0
+    },
+    "m_MaxSize": {
+        "x": 4000.0,
+        "y": 4000.0
+    },
+    "m_TitleContent": {
+        "m_Text": "Chuwilliamson.ScriptableObjects.GameDataWindow",
+        "m_Image": {
+            "instanceID": 0
+        },
+        "m_Tooltip": ""
+    },
+    "m_Pos": {
+        "serializedVersion": "2",
+        "x": 1154.0,
+        "y": 723.0,
+        "width": 766.0,
+        "height": 295.0
+    },
+    "m_PersistentViewDataDictionary": {
+        "instanceID": 0
+    },
+    "sprites": [
+        {
+            "instanceID": 13186
+        },
+        {
+            "instanceID": 13208
+        },
+        {
+            "instanceID": 13138
+        },
+        {
+            "instanceID": 13230
+        },
+        {
+            "instanceID": 13164
+        },
+        {
+            "instanceID": 13160
+        },
+        {
+            "instanceID": 13234
+        },
+        {
+            "instanceID": 13226
+        },
+        {
+            "instanceID": 13242
+        },
+        {
+            "instanceID": 13238
+        },
+        {
+            "instanceID": 13150
+        },
+        {
+            "instanceID": 13194
+        },
+        {
+            "instanceID": 13198
+        },
+        {
+            "instanceID": 13252
+        },
+        {
+            "instanceID": 13168
+        },
+        {
+            "instanceID": 13204
+        },
+        {
+            "instanceID": 13172
+        },
+        {
+            "instanceID": 13212
+        },
+        {
+            "instanceID": 13180
+        },
+        {
+            "instanceID": 13248
+        },
+        {
+            "instanceID": 13222
+        },
+        {
+            "instanceID": 13144
+        },
+        {
+            "instanceID": 13218
+        },
+        {
+            "instanceID": 13190
+        },
+        {
+            "instanceID": 13256
+        },
+        {
+            "instanceID": 13176
+        }
+    ],
+    "lookup": ""
+}

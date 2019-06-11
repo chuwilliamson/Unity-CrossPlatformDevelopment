@@ -17,5 +17,13 @@ namespace Chuwilliamson.ScriptableObjects
         {
             return string.Format("Item: {0}, GUID: {1}, ItemImage: {2}", item.name, item.guid, item);
         }
+
+        public Item Init(Serialization.Item item_)
+        { 
+            Value = item_;
+            name = Value.name;
+            item_.guid = GetInstanceID();
+            return this;
+        }
     }
 }

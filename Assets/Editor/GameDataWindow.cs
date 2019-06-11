@@ -1,18 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Text;
 using UnityEditor;
 using UnityEngine;
-using Object = UnityEngine.Object;
 
 namespace Chuwilliamson.ScriptableObjects
 {
     public class GameDataWindow : EditorWindow
     {
-        public string _lookup;
+        [SerializeField]
+        private List<Sprite> sprites = new List<Sprite>();
         private FieldInfo _field;
+        public string lookup;
+
+        public List<Sprite> Sprites
+        {
+            get
+            {
+                if (sprites.Count <= 0)
+                    sprites = AssetDatabase.FindAssets("t: Sprite", new[] { "Assets/Resources/RPG_inventory_icons" })
+                        .Select(AssetDatabase.GUIDToAssetPath).Select(AssetDatabase.LoadAssetAtPath<Sprite>).ToList();
+
+                return sprites;
+            }
+        }
 
         [MenuItem("Tools/GameData")]
         private static void Init()
@@ -23,17 +38,17 @@ namespace Chuwilliamson.ScriptableObjects
 
         public static void Save(string fileName, object data)
         {
-            Debug.Log("saving data");
-            var path = Path.Combine(Application.streamingAssetsPath, fileName);
             if (data == null)
                 return;
-
-            File.WriteAllText(path, JsonUtility.ToJson(data));
+            var jsonAsset = new TextAsset(JsonUtility.ToJson(data, true));
+            AssetDatabase.CreateAsset(jsonAsset, "Assets/Resources/TextAssets/" + fileName.Split('.')[0] + ".asset");
+            AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(jsonAsset));
+            var filePath = Path.Combine(Application.streamingAssetsPath, fileName);
+            File.WriteAllText(filePath, jsonAsset.text);
         }
 
         public static T Load<T>(string fileName) where T : ScriptableObject
         {
-
             var path = Path.Combine(Application.streamingAssetsPath, fileName);
             var json = File.ReadAllText(path);
             var obj = CreateInstance<T>();
@@ -44,36 +59,40 @@ namespace Chuwilliamson.ScriptableObjects
 
         private void OnGUI()
         {
-
-
-            _lookup = EditorGUILayout.DelayedTextField("lookup ", _lookup);
+            lookup = EditorGUILayout.DelayedTextField("lookup ", lookup);
             if (GUILayout.Button("Save")) Save("GameSettings.json", this);
 
             if (GUILayout.Button("Load"))
             {
                 var obj = Load<GameDataWindow>("GameSettings.json");
-                this._lookup = obj._lookup;
+                lookup = obj.lookup;
             }
 
             if (GUILayout.Button("MakeThemAndSave"))
             {
-                var assets = AssetDatabase.FindAssets("t: Sprite", new[] { "Assets/Resources/RPG_inventory_icons" })
-                    .Select(AssetDatabase.GUIDToAssetPath).Select(AssetDatabase.LoadAssetAtPath<Sprite>).ToArray();
+                var header = "<b>The following file contains these assets</b> \n Type: Name\n";
 
-                foreach (var asset in assets)
+                var names = string.Join(Environment.NewLine, Sprites.Select(n => n.GetType().Name + ":" + n.name + Environment.NewLine));
+
+
+                var parent = new TextAsset(header + names);
+                var assetName = "Items.asset";
+                var path = Path.Combine("Assets/Chuwilliamson/Resources/Items/", assetName);
+                AssetDatabase.CreateAsset(parent, path);
+
+                foreach (var asset in Sprites)
                 {
-                    var obj = CreateInstance<Item>();
-                    obj.Value = new Serialization.Item { itemImage = asset };
-                    var path = Path.Combine("Assets/Chuwilliamson/Resources/Items/", asset.name + ".asset");
-                    var loaded = AssetDatabase.LoadAssetAtPath<Item>(path);
-                    AssetDatabase.CreateAsset(obj, path);
-
+                    var obj = CreateInstance<Item>().Init(new Serialization.Item
+                    { itemImage = asset, name = asset.name });
+                    AssetDatabase.AddObjectToAsset(obj, parent);
                 }
+                var animation = new AnimationClip();
 
+                AssetDatabase.AddObjectToAsset(animation, parent);
+                AssetDatabase.ImportAsset(AssetDatabase.GetAssetPath(parent));
             }
         }
 
-        public List<Texture2D> images = new List<Texture2D>();
         public bool DrawDictionary(SerializedObject so, string propertyName)
         {
             if (propertyName == null)
@@ -97,7 +116,6 @@ namespace Chuwilliamson.ScriptableObjects
                     EditorGUILayout.LabelField(gcValue);
                     EditorGUILayout.EndHorizontal();
                     EditorGUI.indentLevel--;
-
                 }
             }
             else
@@ -106,15 +124,6 @@ namespace Chuwilliamson.ScriptableObjects
             }
 
             return true;
-        }
-    }
-
-    public static class ExtensionMethods
-    {
-        public static Rect MoveDown(this Rect rect, int yoffset)
-        {
-            rect.y += yoffset;
-            return rect;
         }
     }
 }

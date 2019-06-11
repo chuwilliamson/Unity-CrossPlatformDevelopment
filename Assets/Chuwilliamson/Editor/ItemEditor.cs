@@ -2,6 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
+[CustomEditor(typeof(Item))]
 public class ItemEditor : Editor
 {
     private Editor prefabEditor;
@@ -32,8 +33,7 @@ public class ItemEditor : Editor
         EditorGUILayout.PropertyField(prefabProperty);
         var prefabRect = GUILayoutUtility.GetRect(250, 250);
         prefabRect.y += 25;
-        if (prefabProperty.objectReferenceValue != null)
-            prefabEditor.OnPreviewGUI(prefabRect, EditorStyles.whiteLabel);
+        prefabEditor.OnPreviewGUI(prefabRect, EditorStyles.whiteLabel);
 
 
         if (EditorGUI.EndChangeCheck())

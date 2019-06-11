@@ -6,7 +6,7 @@ namespace Chuwilliamson.Testing
 {
     public class TestBoxing : MonoBehaviour
     {
-        [SerializeField] private Vector3 v;
+        
 
         [SerializeField] private Vector3Variable variable;
 
@@ -40,17 +40,6 @@ namespace Chuwilliamson.Testing
         private void OnDisable()
         {
             Save();
-        }
-
-        private void Start()
-        {
-            object o = new Vector3(1, 1, 1);
-            v = (Vector3) o;
-        }
-
-        // Update is called once per frame
-        private void Update()
-        {
-        }
+        } 
     }
 }
