@@ -25,8 +25,7 @@ namespace MorningExercises
         [TextArea(0, 25)] public string _readmeText =
             "1. assign a target /n 2. assign a destination /n 3. make a button /n 4. drag this gameobject into the onclick in the button component " +
             "5.choose Teleport function from dropdown";
-
-
+ 
         [Header("Set this transform to teleport to")]
         public Transform destination;
 
