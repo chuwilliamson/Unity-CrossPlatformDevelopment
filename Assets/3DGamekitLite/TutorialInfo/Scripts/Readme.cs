@@ -1,14 +1,21 @@
 ﻿using System;
 using UnityEngine;
 
-public class Readme : ScriptableObject {
-	public Texture2D icon;
-	public string title;
-	public Section[] sections;
-	public bool loadedLayout;
-	
-	[Serializable]
-	public class Section {
-		public string heading, text, linkText, url;
-	}
+namespace _3DGamekitLite.TutorialInfo.Scripts
+{
+    [CreateAssetMenu(menuName = "Chuwilliamson/Readme")]
+    public class Readme : ScriptableObject
+    {
+        public Texture2D icon;
+        public string title;
+        public Section[] sections;
+        public bool loadedLayout;
+
+        [Serializable]
+        public class Section
+        {
+            public string heading, text, linkText, url;
+        }
+    }
 }
+ 
