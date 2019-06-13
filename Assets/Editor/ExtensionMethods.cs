@@ -1,10 +1,46 @@
-﻿using UnityEditor;
+﻿using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using Debug = System.Diagnostics.Debug;
 
 namespace Chuwilliamson.ScriptableObjects
 {
     public static class ExtensionMethods
     {
+
+        public static bool DrawDictionary(SerializedObject so, string propertyName)
+        {
+            if (propertyName == null)
+                return false;
+            var field = so.targetObject.GetType().GetField(propertyName);
+
+            if (field != null)
+            {
+                var fieldName = field.Name;
+                var fieldValue = field.GetValue(so.targetObject) as Dictionary<string, string>;
+                var gcName = new GUIContent(fieldName);
+                EditorGUILayout.LabelField(gcName, GUILayout.Width(100));
+                Debug.Assert(fieldValue != null, nameof(fieldValue) + " != null");
+                foreach (var kvp in fieldValue)
+                {
+                    EditorGUI.indentLevel++;
+                    var gcKey = new GUIContent("Key: " + kvp.Key);
+                    var gcValue = new GUIContent("Value: " + kvp.Value);
+                    EditorGUILayout.BeginHorizontal();
+
+                    EditorGUILayout.LabelField(gcKey, GUILayout.Width(100));
+                    EditorGUILayout.LabelField(gcValue);
+                    EditorGUILayout.EndHorizontal();
+                    EditorGUI.indentLevel--;
+                }
+            }
+            else
+            {
+                EditorGUILayout.LabelField("Field is null");
+            }
+
+            return true;
+        }
         public static Rect MoveDown(this Rect rect, int yoffset)
         {
             rect.y += yoffset;
@@ -36,10 +72,11 @@ namespace Chuwilliamson.ScriptableObjects
 
                     if (t == null || pt == null) return;
 
-                    var newAnchorsMin = new Vector2(t.anchorMin.x + t.offsetMin.x / pt.rect.width,
-                        t.anchorMin.y + t.offsetMin.y / pt.rect.height);
-                    var newAnchorsMax = new Vector2(t.anchorMax.x + t.offsetMax.x / pt.rect.width,
-                        t.anchorMax.y + t.offsetMax.y / pt.rect.height);
+                    var rect = pt.rect;
+                    var newAnchorsMin = new Vector2(t.anchorMin.x + t.offsetMin.x / rect.width,
+                        t.anchorMin.y + t.offsetMin.y / rect.height);
+                    var newAnchorsMax = new Vector2(t.anchorMax.x + t.offsetMax.x / rect.width,
+                        t.anchorMax.y + t.offsetMax.y / rect.height);
 
                     t.anchorMin = newAnchorsMin;
                     t.anchorMax = newAnchorsMax;
@@ -119,16 +156,20 @@ namespace Chuwilliamson.ScriptableObjects
 
                     if (mirrorAnchors)
                     {
-                        var oldAnchorMin = t.anchorMin;
-                        t.anchorMin = new Vector2(t.anchorMin.x, 1 - t.anchorMax.y);
+                        var anchorMin = t.anchorMin;
+                        var oldAnchorMin = anchorMin;
+                        t.anchorMin = new Vector2(anchorMin.x, 1 - t.anchorMax.y);
                         t.anchorMax = new Vector2(t.anchorMax.x, 1 - oldAnchorMin.y);
                     }
 
-                    var oldOffsetMin = t.offsetMin;
-                    t.offsetMin = new Vector2(t.offsetMin.x, -t.offsetMax.y);
+                    var offsetMin = t.offsetMin;
+                    var oldOffsetMin = offsetMin;
+                    t.offsetMin = new Vector2(offsetMin.x, -t.offsetMax.y);
                     t.offsetMax = new Vector2(t.offsetMax.x, -oldOffsetMin.y);
 
-                    t.localScale = new Vector3(t.localScale.x, -t.localScale.y, t.localScale.z);
+                    var localScale = t.localScale;
+                    localScale = new Vector3(localScale.x, -localScale.y, localScale.z);
+                    t.localScale = localScale;
                 }
             }
         }
