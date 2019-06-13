@@ -28,6 +28,11 @@ namespace Gamekit3D
         public InvertSettings controllerInvertSettings;
         public bool allowRuntimeCameraSettingsChanges;
 
+        string keyboardandmousefreelookrig = "KeyboardAndMouseFreeLookRig";
+        string ellen = "Ellen";
+        string controllerfreelookrig = "ControllerFreeLookRig";
+        string headtarget = "HeadTarget";
+
         public CinemachineFreeLook Current
         {
             get { return inputChoice == InputChoice.KeyboardAndMouse ? keyboardAndMouseCamera : controllerCamera; }
@@ -35,20 +40,24 @@ namespace Gamekit3D
 
         void Reset()
         {
-            Transform keyboardAndMouseCameraTransform = transform.Find("KeyboardAndMouseFreeLookRig");
+
+            Transform keyboardAndMouseCameraTransform = transform.Find(keyboardandmousefreelookrig);
             if (keyboardAndMouseCameraTransform != null)
                 keyboardAndMouseCamera = keyboardAndMouseCameraTransform.GetComponent<CinemachineFreeLook>();
 
-            Transform controllerCameraTransform = transform.Find("ControllerFreeLookRig");
+
+            Transform controllerCameraTransform = transform.Find(controllerfreelookrig);
             if (controllerCameraTransform != null)
                 controllerCamera = controllerCameraTransform.GetComponent<CinemachineFreeLook>();
 
             PlayerController playerController = FindObjectOfType<PlayerController>();
-            if (playerController != null && playerController.name == "Ellen")
+
+            if (playerController != null && playerController.name == ellen)
             {
                 follow = playerController.transform;
 
-                lookAt = follow.Find("HeadTarget");
+
+                lookAt = follow.Find(headtarget);
 
                 if (playerController.cameraSettings == null)
                     playerController.cameraSettings = this;
@@ -83,5 +92,5 @@ namespace Gamekit3D
             keyboardAndMouseCamera.Priority = inputChoice == InputChoice.KeyboardAndMouse ? 1 : 0;
             controllerCamera.Priority = inputChoice == InputChoice.Controller ? 1 : 0;
         }
-    } 
+    }
 }

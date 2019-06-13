@@ -10,45 +10,45 @@ namespace Gamekit3D
     {
         // These constants are used to ensure Ellen moves and behaves properly.
         // It is advised you don't change them without fully understanding what they do in code.
-        private const float k_AirborneTurnSpeedProportion = 5.4f;
-        private const float k_GroundedRayDistance = 1f;
-        private const float k_JumpAbortSpeed = 10f;
-        private const float k_MinEnemyDotCoeff = 0.2f;
-        private const float k_InverseOneEighty = 1f / 180f;
-        private const float k_StickingGravityProportion = 0.3f;
-        private const float k_GroundAcceleration = 20f;
-        private const float k_GroundDeceleration = 25f;
-        protected static PlayerController s_Instance;
-        private readonly int m_HashAirborne = Animator.StringToHash("Airborne");
+        private const float KAirborneTurnSpeedProportion = 5.4f;
+        private const float KGroundedRayDistance = 1f;
+        private const float KJumpAbortSpeed = 10f;
+        private const float KMinEnemyDotCoeff = 0.2f;
+        private const float KInverseOneEighty = 1f / 180f;
+        private const float KStickingGravityProportion = 0.3f;
+        private const float KGroundAcceleration = 20f;
+        private const float KGroundDeceleration = 25f;
+        protected static PlayerController SInstance;
+        private readonly int _mHashAirborne = Animator.StringToHash("Airborne");
 
         // Parameters
 
-        private readonly int m_HashAirborneVerticalSpeed = Animator.StringToHash("AirborneVerticalSpeed");
-        private readonly int m_HashAngleDeltaRad = Animator.StringToHash("AngleDeltaRad");
+        private readonly int _mHashAirborneVerticalSpeed = Animator.StringToHash("AirborneVerticalSpeed");
+        private readonly int _mHashAngleDeltaRad = Animator.StringToHash("AngleDeltaRad");
 
         // Tags
-        private readonly int m_HashBlockInput = Animator.StringToHash("BlockInput");
-        private readonly int m_HashDeath = Animator.StringToHash("Death");
-        private readonly int m_HashEllenCombo1 = Animator.StringToHash("EllenCombo1");
-        private readonly int m_HashEllenCombo2 = Animator.StringToHash("EllenCombo2");
-        private readonly int m_HashEllenCombo3 = Animator.StringToHash("EllenCombo3");
-        private readonly int m_HashEllenCombo4 = Animator.StringToHash("EllenCombo4");
-        private readonly int m_HashEllenDeath = Animator.StringToHash("EllenDeath");
-        private readonly int m_HashFootFall = Animator.StringToHash("FootFall");
-        private readonly int m_HashForwardSpeed = Animator.StringToHash("ForwardSpeed");
-        private readonly int m_HashGrounded = Animator.StringToHash("Grounded");
-        private readonly int m_HashHurt = Animator.StringToHash("Hurt");
-        private readonly int m_HashHurtFromX = Animator.StringToHash("HurtFromX");
-        private readonly int m_HashHurtFromY = Animator.StringToHash("HurtFromY");
-        private readonly int m_HashInputDetected = Animator.StringToHash("InputDetected");
-        private readonly int m_HashLanding = Animator.StringToHash("Landing"); // Also a parameter.
+        private readonly int _mHashBlockInput = Animator.StringToHash("BlockInput");
+        private readonly int _mHashDeath = Animator.StringToHash("Death");
+        private readonly int _mHashEllenCombo1 = Animator.StringToHash("EllenCombo1");
+        private readonly int _mHashEllenCombo2 = Animator.StringToHash("EllenCombo2");
+        private readonly int _mHashEllenCombo3 = Animator.StringToHash("EllenCombo3");
+        private readonly int _mHashEllenCombo4 = Animator.StringToHash("EllenCombo4");
+        private readonly int _mHashEllenDeath = Animator.StringToHash("EllenDeath");
+        private readonly int _mHashFootFall = Animator.StringToHash("FootFall");
+        private readonly int _mHashForwardSpeed = Animator.StringToHash("ForwardSpeed");
+        private readonly int _mHashGrounded = Animator.StringToHash("Grounded");
+        private readonly int _mHashHurt = Animator.StringToHash("Hurt");
+        private readonly int _mHashHurtFromX = Animator.StringToHash("HurtFromX");
+        private readonly int _mHashHurtFromY = Animator.StringToHash("HurtFromY");
+        private readonly int _mHashInputDetected = Animator.StringToHash("InputDetected");
+        private readonly int _mHashLanding = Animator.StringToHash("Landing"); // Also a parameter.
 
         // States
-        private readonly int m_HashLocomotion = Animator.StringToHash("Locomotion");
-        private readonly int m_HashMeleeAttack = Animator.StringToHash("MeleeAttack");
-        private readonly int m_HashRespawn = Animator.StringToHash("Respawn");
-        private readonly int m_HashStateTime = Animator.StringToHash("StateTime");
-        private readonly int m_HashTimeoutToIdle = Animator.StringToHash("TimeoutToIdle");
+        private readonly int _mHashLocomotion = Animator.StringToHash("Locomotion");
+        private readonly int _mHashMeleeAttack = Animator.StringToHash("MeleeAttack");
+        private readonly int _mHashRespawn = Animator.StringToHash("Respawn");
+        private readonly int _mHashStateTime = Animator.StringToHash("StateTime");
+        private readonly int _mHashTimeoutToIdle = Animator.StringToHash("TimeoutToIdle");
 
         public CameraSettings cameraSettings; // Reference used to determine the camera's direction.
         public bool canAttack; // Whether or not Ellen can swing her staff.
@@ -62,49 +62,49 @@ namespace Gamekit3D
         public float idleTimeout = 5f; // How long before Ellen starts considering random idles.
         public float jumpSpeed = 10f; // How fast Ellen takes off when jumping.
         public RandomAudioPlayer landingPlayer;
-        protected float m_AngleDiff; // Angle in degrees between Ellen's current rotation and her target rotation.
+        protected float MAngleDiff; // Angle in degrees between Ellen's current rotation and her target rotation.
 
         protected Animator
-            m_Animator; // Reference used to make decisions based on Ellen's current animation and to set parameters.
-
-        protected CharacterController m_CharCtrl; // Reference used to actually move Ellen.
-        protected Checkpoint m_CurrentCheckpoint; // Reference used to reset Ellen to the correct position on respawn.
-
-        protected AnimatorStateInfo m_CurrentStateInfo; // Information about the base layer of the animator cached.
-        protected Material m_CurrentWalkingSurface; // Reference used to make decisions about audio.
-        protected Damageable m_Damageable; // Reference used to set invulnerablity and health based on respawning.
-        protected float m_DesiredForwardSpeed; // How fast Ellen aims be going along the ground based on input.
-        protected float m_ForwardSpeed; // How fast Ellen is currently going along the ground.
-        protected float m_IdleTimer; // Used to count up to Ellen considering a random idle.
-        protected bool m_InAttack; // Whether Ellen is currently in the middle of a melee attack.
-        protected bool m_InCombo; // Whether Ellen is currently in the middle of her melee combo.
-        protected PlayerInput m_Input; // Reference used to determine how Ellen should move.
-        protected bool m_IsAnimatorTransitioning;
-        protected bool m_IsGrounded = true; // Whether or not Ellen is currently standing on the ground.
-        protected AnimatorStateInfo m_NextStateInfo;
-        protected Collider[] m_OverlapResult = new Collider[8]; // Used to cache colliders that are near Ellen.
-
-        protected AnimatorStateInfo
-            m_PreviousCurrentStateInfo; // Information about the base layer of the animator from last frame.
-
-        protected bool m_PreviousIsAnimatorTransitioning;
-        protected bool m_PreviouslyGrounded = true; // Whether or not Ellen was standing on the ground last frame.
-        protected AnimatorStateInfo m_PreviousNextStateInfo;
-        protected bool m_ReadyToJump; // Whether or not the input state and Ellen are correct to allow jumping.
-        protected Renderer[] m_Renderers; // References used to make sure Renderers are reset properly. 
-        protected bool m_Respawning; // Whether Ellen is currently respawning.
-        protected Quaternion m_TargetRotation; // What rotation Ellen is aiming to have based on input.
-        protected float m_VerticalSpeed; // How fast Ellen is currently moving up or down.
+            MAnimator; // Reference used to make decisions based on Ellen's current animation and to set parameters.
 
         public float maxForwardSpeed = 8f; // How fast Ellen can run.
         public float maxTurnSpeed = 1200f; // How fast Ellen turns when stationary.
+
+        protected CharacterController MCharCtrl; // Reference used to actually move Ellen.
+        protected Checkpoint MCurrentCheckpoint; // Reference used to reset Ellen to the correct position on respawn.
+
+        protected AnimatorStateInfo MCurrentStateInfo; // Information about the base layer of the animator cached.
+        protected Material MCurrentWalkingSurface; // Reference used to make decisions about audio.
+        protected Damageable MDamageable; // Reference used to set invulnerablity and health based on respawning.
+        protected float MDesiredForwardSpeed; // How fast Ellen aims be going along the ground based on input.
         public MeleeWeapon meleeWeapon; // Reference used to (de)activate the staff when attacking. 
+        protected float MForwardSpeed; // How fast Ellen is currently going along the ground.
+        protected float MIdleTimer; // Used to count up to Ellen considering a random idle.
+        protected bool MInAttack; // Whether Ellen is currently in the middle of a melee attack.
+        protected bool MInCombo; // Whether Ellen is currently in the middle of her melee combo.
+        protected PlayerInput MInput; // Reference used to determine how Ellen should move.
         public float minTurnSpeed = 400f; // How fast Ellen turns when moving at maximum speed.
-        public static PlayerController instance => s_Instance;
+        protected bool MIsAnimatorTransitioning;
+        protected bool MIsGrounded = true; // Whether or not Ellen is currently standing on the ground.
+        protected AnimatorStateInfo MNextStateInfo;
+        protected Collider[] MOverlapResult = new Collider[8]; // Used to cache colliders that are near Ellen.
 
-        public bool respawning => m_Respawning;
+        protected AnimatorStateInfo
+            MPreviousCurrentStateInfo; // Information about the base layer of the animator from last frame.
 
-        protected bool IsMoveInput => !Mathf.Approximately(m_Input.MoveInput.sqrMagnitude, 0f);
+        protected bool MPreviousIsAnimatorTransitioning;
+        protected bool MPreviouslyGrounded = true; // Whether or not Ellen was standing on the ground last frame.
+        protected AnimatorStateInfo MPreviousNextStateInfo;
+        protected bool MReadyToJump; // Whether or not the input state and Ellen are correct to allow jumping.
+        protected Renderer[] MRenderers; // References used to make sure Renderers are reset properly. 
+        protected bool MRespawning; // Whether Ellen is currently respawning.
+        protected Quaternion MTargetRotation; // What rotation Ellen is aiming to have based on input.
+        protected float MVerticalSpeed; // How fast Ellen is currently moving up or down.
+        public static PlayerController Instance => SInstance;
+
+        public bool Respawning => MRespawning;
+
+        protected bool IsMoveInput => !Mathf.Approximately(MInput.MoveInput.sqrMagnitude, 0f);
 
         // Called by Ellen's Damageable when she is hurt.
         public void OnReceiveMessage(MessageType type, object sender, object data)
@@ -163,36 +163,36 @@ namespace Gamekit3D
         // Called automatically by Unity when the script first exists in the scene.
         private void Awake()
         {
-            m_Input = GetComponent<PlayerInput>();
-            m_Animator = GetComponent<Animator>();
-            m_CharCtrl = GetComponent<CharacterController>();
+            MInput = GetComponent<PlayerInput>();
+            MAnimator = GetComponent<Animator>();
+            MCharCtrl = GetComponent<CharacterController>();
 
             meleeWeapon.SetOwner(gameObject);
 
-            s_Instance = this;
+            SInstance = this;
         }
 
         // Called automatically by Unity after Awake whenever the script is enabled. 
         private void OnEnable()
         {
-            SceneLinkedSMB<PlayerController>.Initialise(m_Animator, this);
+            SceneLinkedSMB<PlayerController>.Initialise(MAnimator, this);
 
-            m_Damageable = GetComponent<Damageable>();
-            m_Damageable.onDamageMessageReceivers.Add(this);
+            MDamageable = GetComponent<Damageable>();
+            MDamageable.onDamageMessageReceivers.Add(this);
 
-            m_Damageable.isInvulnerable = true;
+            MDamageable.isInvulnerable = true;
 
             EquipMeleeWeapon(false);
 
-            m_Renderers = GetComponentsInChildren<Renderer>();
+            MRenderers = GetComponentsInChildren<Renderer>();
         }
 
         // Called automatically by Unity whenever the script is disabled.
         private void OnDisable()
         {
-            m_Damageable.onDamageMessageReceivers.Remove(this);
+            MDamageable.onDamageMessageReceivers.Remove(this);
 
-            for (var i = 0; i < m_Renderers.Length; ++i) m_Renderers[i].enabled = true;
+            for (var i = 0; i < MRenderers.Length; ++i) MRenderers[i].enabled = true;
         }
 
         // Called automatically by Unity once every Physics step.
@@ -204,12 +204,12 @@ namespace Gamekit3D
 
             EquipMeleeWeapon(IsWeaponEquiped());
 
-            m_Animator.SetFloat(m_HashStateTime,
-                Mathf.Repeat(m_Animator.GetCurrentAnimatorStateInfo(0).normalizedTime, 1f));
-            m_Animator.ResetTrigger(m_HashMeleeAttack);
+            MAnimator.SetFloat(_mHashStateTime,
+                Mathf.Repeat(MAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime, 1f));
+            MAnimator.ResetTrigger(_mHashMeleeAttack);
 
-            if (m_Input.Attack && canAttack)
-                m_Animator.SetTrigger(m_HashMeleeAttack);
+            if (MInput.Attack && canAttack)
+                MAnimator.SetTrigger(_mHashMeleeAttack);
 
             CalculateForwardMovement();
             CalculateVerticalMovement();
@@ -223,40 +223,40 @@ namespace Gamekit3D
 
             TimeoutToIdle();
 
-            m_PreviouslyGrounded = m_IsGrounded;
+            MPreviouslyGrounded = MIsGrounded;
         }
 
         // Called at the start of FixedUpdate to record the current state of the base layer of the animator.
         private void CacheAnimatorState()
         {
-            m_PreviousCurrentStateInfo = m_CurrentStateInfo;
-            m_PreviousNextStateInfo = m_NextStateInfo;
-            m_PreviousIsAnimatorTransitioning = m_IsAnimatorTransitioning;
+            MPreviousCurrentStateInfo = MCurrentStateInfo;
+            MPreviousNextStateInfo = MNextStateInfo;
+            MPreviousIsAnimatorTransitioning = MIsAnimatorTransitioning;
 
-            m_CurrentStateInfo = m_Animator.GetCurrentAnimatorStateInfo(0);
-            m_NextStateInfo = m_Animator.GetNextAnimatorStateInfo(0);
-            m_IsAnimatorTransitioning = m_Animator.IsInTransition(0);
+            MCurrentStateInfo = MAnimator.GetCurrentAnimatorStateInfo(0);
+            MNextStateInfo = MAnimator.GetNextAnimatorStateInfo(0);
+            MIsAnimatorTransitioning = MAnimator.IsInTransition(0);
         }
 
         // Called after the animator state has been cached to determine whether this script should block user input.
         private void UpdateInputBlocking()
         {
-            var inputBlocked = m_CurrentStateInfo.tagHash == m_HashBlockInput && !m_IsAnimatorTransitioning;
-            inputBlocked |= m_NextStateInfo.tagHash == m_HashBlockInput;
-            m_Input.playerControllerInputBlocked = inputBlocked;
+            var inputBlocked = MCurrentStateInfo.tagHash == _mHashBlockInput && !MIsAnimatorTransitioning;
+            inputBlocked |= MNextStateInfo.tagHash == _mHashBlockInput;
+            MInput.playerControllerInputBlocked = inputBlocked;
         }
 
         // Called after the animator state has been cached to determine whether or not the staff should be active or not.
         private bool IsWeaponEquiped()
         {
-            var equipped = m_NextStateInfo.shortNameHash == m_HashEllenCombo1 ||
-                           m_CurrentStateInfo.shortNameHash == m_HashEllenCombo1;
-            equipped |= m_NextStateInfo.shortNameHash == m_HashEllenCombo2 ||
-                        m_CurrentStateInfo.shortNameHash == m_HashEllenCombo2;
-            equipped |= m_NextStateInfo.shortNameHash == m_HashEllenCombo3 ||
-                        m_CurrentStateInfo.shortNameHash == m_HashEllenCombo3;
-            equipped |= m_NextStateInfo.shortNameHash == m_HashEllenCombo4 ||
-                        m_CurrentStateInfo.shortNameHash == m_HashEllenCombo4;
+            var equipped = MNextStateInfo.shortNameHash == _mHashEllenCombo1 ||
+                           MCurrentStateInfo.shortNameHash == _mHashEllenCombo1;
+            equipped |= MNextStateInfo.shortNameHash == _mHashEllenCombo2 ||
+                        MCurrentStateInfo.shortNameHash == _mHashEllenCombo2;
+            equipped |= MNextStateInfo.shortNameHash == _mHashEllenCombo3 ||
+                        MCurrentStateInfo.shortNameHash == _mHashEllenCombo3;
+            equipped |= MNextStateInfo.shortNameHash == _mHashEllenCombo4 ||
+                        MCurrentStateInfo.shortNameHash == _mHashEllenCombo4;
 
             return equipped;
         }
@@ -265,65 +265,65 @@ namespace Gamekit3D
         private void EquipMeleeWeapon(bool equip)
         {
             meleeWeapon.gameObject.SetActive(equip);
-            m_InAttack = false;
-            m_InCombo = equip;
+            MInAttack = false;
+            MInCombo = equip;
 
             if (!equip)
-                m_Animator.ResetTrigger(m_HashMeleeAttack);
+                MAnimator.ResetTrigger(_mHashMeleeAttack);
         }
 
         // Called each physics step.
         private void CalculateForwardMovement()
         {
             // Cache the move input and cap it's magnitude at 1.
-            var moveInput = m_Input.MoveInput;
+            var moveInput = MInput.MoveInput;
             if (moveInput.sqrMagnitude > 1f)
                 moveInput.Normalize();
 
             // Calculate the speed intended by input.
-            m_DesiredForwardSpeed = moveInput.magnitude * maxForwardSpeed;
+            MDesiredForwardSpeed = moveInput.magnitude * maxForwardSpeed;
 
             // Determine change to speed based on whether there is currently any move input.
-            var acceleration = IsMoveInput ? k_GroundAcceleration : k_GroundDeceleration;
+            var acceleration = IsMoveInput ? KGroundAcceleration : KGroundDeceleration;
 
             // Adjust the forward speed towards the desired speed.
-            m_ForwardSpeed = Mathf.MoveTowards(m_ForwardSpeed, m_DesiredForwardSpeed, acceleration * Time.deltaTime);
+            MForwardSpeed = Mathf.MoveTowards(MForwardSpeed, MDesiredForwardSpeed, acceleration * Time.deltaTime);
 
             // Set the animator parameter to control what animation is being played.
-            m_Animator.SetFloat(m_HashForwardSpeed, m_ForwardSpeed);
+            MAnimator.SetFloat(_mHashForwardSpeed, MForwardSpeed);
         }
 
         // Called each physics step.
         private void CalculateVerticalMovement()
         {
             // If jump is not currently held and Ellen is on the ground then she is ready to jump.
-            if (!m_Input.JumpInput && m_IsGrounded)
-                m_ReadyToJump = true;
+            if (!MInput.JumpInput && MIsGrounded)
+                MReadyToJump = true;
 
-            if (m_IsGrounded)
+            if (MIsGrounded)
             {
                 // When grounded we apply a slight negative vertical speed to make Ellen "stick" to the ground.
-                m_VerticalSpeed = -gravity * k_StickingGravityProportion;
+                MVerticalSpeed = -gravity * KStickingGravityProportion;
 
                 // If jump is held, Ellen is ready to jump and not currently in the middle of a melee combo...
-                if (m_Input.JumpInput && m_ReadyToJump && !m_InCombo)
+                if (MInput.JumpInput && MReadyToJump && !MInCombo)
                 {
                     // ... then override the previously set vertical speed and make sure she cannot jump again.
-                    m_VerticalSpeed = jumpSpeed;
-                    m_IsGrounded = false;
-                    m_ReadyToJump = false;
+                    MVerticalSpeed = jumpSpeed;
+                    MIsGrounded = false;
+                    MReadyToJump = false;
                 }
             }
             else
             {
                 // If Ellen is airborne, the jump button is not held and Ellen is currently moving upwards...
-                if (!m_Input.JumpInput && m_VerticalSpeed > 0.0f) m_VerticalSpeed -= k_JumpAbortSpeed * Time.deltaTime;
+                if (!MInput.JumpInput && MVerticalSpeed > 0.0f) MVerticalSpeed -= KJumpAbortSpeed * Time.deltaTime;
 
                 // If a jump is approximately peaking, make it absolute.
-                if (Mathf.Approximately(m_VerticalSpeed, 0f)) m_VerticalSpeed = 0f;
+                if (Mathf.Approximately(MVerticalSpeed, 0f)) MVerticalSpeed = 0f;
 
                 // If Ellen is airborne, apply gravity.
-                m_VerticalSpeed -= gravity * Time.deltaTime;
+                MVerticalSpeed -= gravity * Time.deltaTime;
             }
         }
 
@@ -331,7 +331,7 @@ namespace Gamekit3D
         private void SetTargetRotation()
         {
             // Create three variables, move input local to the player, flattened forward direction of the camera and a local target rotation.
-            var moveInput = m_Input.MoveInput;
+            var moveInput = MInput.MoveInput;
             var localMovementDirection = new Vector3(moveInput.x, 0f, moveInput.y).normalized;
 
             var forward = Quaternion.Euler(0f, cameraSettings.Current.m_XAxis.Value, 0f) * Vector3.forward;
@@ -356,13 +356,13 @@ namespace Gamekit3D
             var resultingForward = targetRotation * Vector3.forward;
 
             // If attacking try to orient to close enemies.
-            if (m_InAttack)
+            if (MInAttack)
             {
                 // Find all the enemies in the local area.
                 var centre = transform.position + transform.forward * 2.0f + transform.up;
                 var halfExtents = new Vector3(3.0f, 1.0f, 2.0f);
                 var layerMask = 1 << LayerMask.NameToLayer("Enemy");
-                var count = Physics.OverlapBoxNonAlloc(centre, halfExtents, m_OverlapResult, targetRotation, layerMask);
+                var count = Physics.OverlapBoxNonAlloc(centre, halfExtents, MOverlapResult, targetRotation, layerMask);
 
                 // Go through all the enemies in the local area...
                 var closestDot = 0.0f;
@@ -372,7 +372,7 @@ namespace Gamekit3D
                 for (var i = 0; i < count; ++i)
                 {
                     // ... and for each get a vector from the player to the enemy.
-                    var playerToEnemy = m_OverlapResult[i].transform.position - transform.position;
+                    var playerToEnemy = MOverlapResult[i].transform.position - transform.position;
                     playerToEnemy.y = 0;
                     playerToEnemy.Normalize();
 
@@ -381,7 +381,7 @@ namespace Gamekit3D
                     var d = Vector3.Dot(resultingForward, playerToEnemy);
 
                     // Store the closest enemy.
-                    if (d > k_MinEnemyDotCoeff && d > closestDot)
+                    if (d > KMinEnemyDotCoeff && d > closestDot)
                     {
                         closestForward = playerToEnemy;
                         closestDot = d;
@@ -404,54 +404,54 @@ namespace Gamekit3D
             var angleCurrent = Mathf.Atan2(transform.forward.x, transform.forward.z) * Mathf.Rad2Deg;
             var targetAngle = Mathf.Atan2(resultingForward.x, resultingForward.z) * Mathf.Rad2Deg;
 
-            m_AngleDiff = Mathf.DeltaAngle(angleCurrent, targetAngle);
-            m_TargetRotation = targetRotation;
+            MAngleDiff = Mathf.DeltaAngle(angleCurrent, targetAngle);
+            MTargetRotation = targetRotation;
         }
 
         // Called each physics step to help determine whether Ellen can turn under player input.
         private bool IsOrientationUpdated()
         {
             var updateOrientationForLocomotion =
-                !m_IsAnimatorTransitioning && m_CurrentStateInfo.shortNameHash == m_HashLocomotion ||
-                m_NextStateInfo.shortNameHash == m_HashLocomotion;
+                !MIsAnimatorTransitioning && MCurrentStateInfo.shortNameHash == _mHashLocomotion ||
+                MNextStateInfo.shortNameHash == _mHashLocomotion;
             var updateOrientationForAirborne =
-                !m_IsAnimatorTransitioning && m_CurrentStateInfo.shortNameHash == m_HashAirborne ||
-                m_NextStateInfo.shortNameHash == m_HashAirborne;
+                !MIsAnimatorTransitioning && MCurrentStateInfo.shortNameHash == _mHashAirborne ||
+                MNextStateInfo.shortNameHash == _mHashAirborne;
             var updateOrientationForLanding =
-                !m_IsAnimatorTransitioning && m_CurrentStateInfo.shortNameHash == m_HashLanding ||
-                m_NextStateInfo.shortNameHash == m_HashLanding;
+                !MIsAnimatorTransitioning && MCurrentStateInfo.shortNameHash == _mHashLanding ||
+                MNextStateInfo.shortNameHash == _mHashLanding;
 
             return updateOrientationForLocomotion || updateOrientationForAirborne || updateOrientationForLanding ||
-                   m_InCombo && !m_InAttack;
+                   MInCombo && !MInAttack;
         }
 
         // Called each physics step after SetTargetRotation if there is move input and Ellen is in the correct animator state according to IsOrientationUpdated.
         private void UpdateOrientation()
         {
-            m_Animator.SetFloat(m_HashAngleDeltaRad, m_AngleDiff * Mathf.Deg2Rad);
+            MAnimator.SetFloat(_mHashAngleDeltaRad, MAngleDiff * Mathf.Deg2Rad);
 
-            var localInput = new Vector3(m_Input.MoveInput.x, 0f, m_Input.MoveInput.y);
-            var groundedTurnSpeed = Mathf.Lerp(maxTurnSpeed, minTurnSpeed, m_ForwardSpeed / m_DesiredForwardSpeed);
-            var actualTurnSpeed = m_IsGrounded
+            var localInput = new Vector3(MInput.MoveInput.x, 0f, MInput.MoveInput.y);
+            var groundedTurnSpeed = Mathf.Lerp(maxTurnSpeed, minTurnSpeed, MForwardSpeed / MDesiredForwardSpeed);
+            var actualTurnSpeed = MIsGrounded
                 ? groundedTurnSpeed
-                : Vector3.Angle(transform.forward, localInput) * k_InverseOneEighty * k_AirborneTurnSpeedProportion *
+                : Vector3.Angle(transform.forward, localInput) * KInverseOneEighty * KAirborneTurnSpeedProportion *
                   groundedTurnSpeed;
-            m_TargetRotation =
-                Quaternion.RotateTowards(transform.rotation, m_TargetRotation, actualTurnSpeed * Time.deltaTime);
+            MTargetRotation =
+                Quaternion.RotateTowards(transform.rotation, MTargetRotation, actualTurnSpeed * Time.deltaTime);
 
-            transform.rotation = m_TargetRotation;
+            transform.rotation = MTargetRotation;
         }
 
         // Called each physics step to check if audio should be played and if so instruct the relevant random audio player to do so.
         private void PlayAudio()
         {
-            var footfallCurve = m_Animator.GetFloat(m_HashFootFall);
+            var footfallCurve = MAnimator.GetFloat(_mHashFootFall);
 
             if (footfallCurve > 0.01f && !footstepPlayer.playing && footstepPlayer.canPlay)
             {
                 footstepPlayer.playing = true;
                 footstepPlayer.canPlay = false;
-                footstepPlayer.PlayRandomClip(m_CurrentWalkingSurface, m_ForwardSpeed < 4 ? 0 : 1);
+                footstepPlayer.PlayRandomClip(MCurrentWalkingSurface, MForwardSpeed < 4 ? 0 : 1);
             }
             else if (footstepPlayer.playing)
             {
@@ -462,52 +462,52 @@ namespace Gamekit3D
                 footstepPlayer.canPlay = true;
             }
 
-            if (m_IsGrounded && !m_PreviouslyGrounded)
+            if (MIsGrounded && !MPreviouslyGrounded)
             {
-                landingPlayer.PlayRandomClip(m_CurrentWalkingSurface, m_ForwardSpeed < 4 ? 0 : 1);
+                landingPlayer.PlayRandomClip(MCurrentWalkingSurface, MForwardSpeed < 4 ? 0 : 1);
                 emoteLandingPlayer.PlayRandomClip();
             }
 
-            if (!m_IsGrounded && m_PreviouslyGrounded && m_VerticalSpeed > 0f) emoteJumpPlayer.PlayRandomClip();
+            if (!MIsGrounded && MPreviouslyGrounded && MVerticalSpeed > 0f) emoteJumpPlayer.PlayRandomClip();
 
-            if (m_CurrentStateInfo.shortNameHash == m_HashHurt && m_PreviousCurrentStateInfo.shortNameHash != m_HashHurt
+            if (MCurrentStateInfo.shortNameHash == _mHashHurt && MPreviousCurrentStateInfo.shortNameHash != _mHashHurt
             ) hurtAudioPlayer.PlayRandomClip();
 
-            if (m_CurrentStateInfo.shortNameHash == m_HashEllenDeath &&
-                m_PreviousCurrentStateInfo.shortNameHash != m_HashEllenDeath) emoteDeathPlayer.PlayRandomClip();
+            if (MCurrentStateInfo.shortNameHash == _mHashEllenDeath &&
+                MPreviousCurrentStateInfo.shortNameHash != _mHashEllenDeath) emoteDeathPlayer.PlayRandomClip();
 
-            if (m_CurrentStateInfo.shortNameHash == m_HashEllenCombo1 &&
-                m_PreviousCurrentStateInfo.shortNameHash != m_HashEllenCombo1 ||
-                m_CurrentStateInfo.shortNameHash == m_HashEllenCombo2 &&
-                m_PreviousCurrentStateInfo.shortNameHash != m_HashEllenCombo2 ||
-                m_CurrentStateInfo.shortNameHash == m_HashEllenCombo3 &&
-                m_PreviousCurrentStateInfo.shortNameHash != m_HashEllenCombo3 ||
-                m_CurrentStateInfo.shortNameHash == m_HashEllenCombo4 &&
-                m_PreviousCurrentStateInfo.shortNameHash != m_HashEllenCombo4)
+            if (MCurrentStateInfo.shortNameHash == _mHashEllenCombo1 &&
+                MPreviousCurrentStateInfo.shortNameHash != _mHashEllenCombo1 ||
+                MCurrentStateInfo.shortNameHash == _mHashEllenCombo2 &&
+                MPreviousCurrentStateInfo.shortNameHash != _mHashEllenCombo2 ||
+                MCurrentStateInfo.shortNameHash == _mHashEllenCombo3 &&
+                MPreviousCurrentStateInfo.shortNameHash != _mHashEllenCombo3 ||
+                MCurrentStateInfo.shortNameHash == _mHashEllenCombo4 &&
+                MPreviousCurrentStateInfo.shortNameHash != _mHashEllenCombo4)
                 emoteAttackPlayer.PlayRandomClip();
         }
 
         // Called each physics step to count up to the point where Ellen considers a random idle.
         private void TimeoutToIdle()
         {
-            var inputDetected = IsMoveInput || m_Input.Attack || m_Input.JumpInput;
-            if (m_IsGrounded && !inputDetected)
+            var inputDetected = IsMoveInput || MInput.Attack || MInput.JumpInput;
+            if (MIsGrounded && !inputDetected)
             {
-                m_IdleTimer += Time.deltaTime;
+                MIdleTimer += Time.deltaTime;
 
-                if (m_IdleTimer >= idleTimeout)
+                if (MIdleTimer >= idleTimeout)
                 {
-                    m_IdleTimer = 0f;
-                    m_Animator.SetTrigger(m_HashTimeoutToIdle);
+                    MIdleTimer = 0f;
+                    MAnimator.SetTrigger(_mHashTimeoutToIdle);
                 }
             }
             else
             {
-                m_IdleTimer = 0f;
-                m_Animator.ResetTrigger(m_HashTimeoutToIdle);
+                MIdleTimer = 0f;
+                MAnimator.ResetTrigger(_mHashTimeoutToIdle);
             }
 
-            m_Animator.SetBool(m_HashInputDetected, inputDetected);
+            MAnimator.SetBool(_mHashInputDetected, inputDetected);
         }
 
         // Called each physics step (so long as the Animator component is set to Animate Physics) after FixedUpdate to override root motion.
@@ -516,75 +516,75 @@ namespace Gamekit3D
             Vector3 movement;
 
             // If Ellen is on the ground...
-            if (m_IsGrounded)
+            if (MIsGrounded)
             {
                 // ... raycast into the ground...
                 RaycastHit hit;
-                var ray = new Ray(transform.position + Vector3.up * k_GroundedRayDistance * 0.5f, -Vector3.up);
-                if (Physics.Raycast(ray, out hit, k_GroundedRayDistance, Physics.AllLayers,
+                var ray = new Ray(transform.position + Vector3.up * KGroundedRayDistance * 0.5f, -Vector3.up);
+                if (Physics.Raycast(ray, out hit, KGroundedRayDistance, Physics.AllLayers,
                     QueryTriggerInteraction.Ignore))
                 {
                     // ... and get the movement of the root motion rotated to lie along the plane of the ground.
-                    movement = Vector3.ProjectOnPlane(m_Animator.deltaPosition, hit.normal);
+                    movement = Vector3.ProjectOnPlane(MAnimator.deltaPosition, hit.normal);
 
                     // Also store the current walking surface so the correct audio is played.
                     var groundRenderer = hit.collider.GetComponentInChildren<Renderer>();
-                    m_CurrentWalkingSurface = groundRenderer ? groundRenderer.sharedMaterial : null;
+                    MCurrentWalkingSurface = groundRenderer ? groundRenderer.sharedMaterial : null;
                 }
                 else
                 {
                     // If no ground is hit just get the movement as the root motion.
                     // Theoretically this should rarely happen as when grounded the ray should always hit.
-                    movement = m_Animator.deltaPosition;
-                    m_CurrentWalkingSurface = null;
+                    movement = MAnimator.deltaPosition;
+                    MCurrentWalkingSurface = null;
                 }
             }
             else
             {
                 // If not grounded the movement is just in the forward direction.
-                movement = m_ForwardSpeed * transform.forward * Time.deltaTime;
+                movement = MForwardSpeed * transform.forward * Time.deltaTime;
             }
 
             // Rotate the transform of the character controller by the animation's root rotation.
-            m_CharCtrl.transform.rotation *= m_Animator.deltaRotation;
+            MCharCtrl.transform.rotation *= MAnimator.deltaRotation;
 
             // Add to the movement with the calculated vertical speed.
-            movement += m_VerticalSpeed * Vector3.up * Time.deltaTime;
+            movement += MVerticalSpeed * Vector3.up * Time.deltaTime;
 
             // Move the character controller.
-            m_CharCtrl.Move(movement);
+            MCharCtrl.Move(movement);
 
             // After the movement store whether or not the character controller is grounded.
-            m_IsGrounded = m_CharCtrl.isGrounded;
+            MIsGrounded = MCharCtrl.isGrounded;
 
             // If Ellen is not on the ground then send the vertical speed to the animator.
             // This is so the vertical speed is kept when landing so the correct landing animation is played.
-            if (!m_IsGrounded)
-                m_Animator.SetFloat(m_HashAirborneVerticalSpeed, m_VerticalSpeed);
+            if (!MIsGrounded)
+                MAnimator.SetFloat(_mHashAirborneVerticalSpeed, MVerticalSpeed);
 
             // Send whether or not Ellen is on the ground to the animator.
-            m_Animator.SetBool(m_HashGrounded, m_IsGrounded);
+            MAnimator.SetBool(_mHashGrounded, MIsGrounded);
         }
 
         // This is called by an animation event when Ellen swings her staff.
         public void MeleeAttackStart(int throwing = 0)
         {
             meleeWeapon.BeginAttack(throwing != 0);
-            m_InAttack = true;
+            MInAttack = true;
         }
 
         // This is called by an animation event when Ellen finishes swinging her staff.
         public void MeleeAttackEnd()
         {
             meleeWeapon.EndAttack();
-            m_InAttack = false;
+            MInAttack = false;
         }
 
         // This is called by Checkpoints to make sure Ellen respawns correctly.
         public void SetCheckpoint(Checkpoint checkpoint)
         {
             if (checkpoint != null)
-                m_CurrentCheckpoint = checkpoint;
+                MCurrentCheckpoint = checkpoint;
         }
 
         // This is usually called by a state machine behaviour on the animator controller but can be called from anywhere.
@@ -596,7 +596,7 @@ namespace Gamekit3D
         protected IEnumerator RespawnRoutine()
         {
             // Wait for the animator to be transitioning from the EllenDeath state.
-            while (m_CurrentStateInfo.shortNameHash != m_HashEllenDeath || !m_IsAnimatorTransitioning)
+            while (MCurrentStateInfo.shortNameHash != _mHashEllenDeath || !MIsAnimatorTransitioning)
                 yield return null;
 
             // Wait for the screen to fade out.
@@ -608,10 +608,10 @@ namespace Gamekit3D
             spawn.enabled = true;
 
             // If there is a checkpoint, move Ellen to it.
-            if (m_CurrentCheckpoint != null)
+            if (MCurrentCheckpoint != null)
             {
-                transform.position = m_CurrentCheckpoint.transform.position;
-                transform.rotation = m_CurrentCheckpoint.transform.rotation;
+                transform.position = MCurrentCheckpoint.transform.position;
+                transform.rotation = MCurrentCheckpoint.transform.rotation;
             }
             else
             {
@@ -620,7 +620,7 @@ namespace Gamekit3D
             }
 
             // Set the Respawn parameter of the animator.
-            m_Animator.SetTrigger(m_HashRespawn);
+            MAnimator.SetTrigger(_mHashRespawn);
 
             // Start the respawn graphic effects.
             spawn.StartEffect();
@@ -629,23 +629,23 @@ namespace Gamekit3D
             // Currently it is not important to yield here but should some changes occur that require waiting until a respawn has finished this will be required.
             yield return StartCoroutine(ScreenFader.FadeSceneIn());
 
-            m_Damageable.ResetDamage();
+            MDamageable.ResetDamage();
         }
 
         // Called by a state machine behaviour on Ellen's animator controller.
         public void RespawnFinished()
         {
-            m_Respawning = false;
+            MRespawning = false;
 
             //we set the damageable invincible so we can't get hurt just after being respawned (feel like a double punitive)
-            m_Damageable.isInvulnerable = false;
+            MDamageable.isInvulnerable = false;
         }
 
         // Called by OnReceiveMessage.
         private void Damaged(Damageable.DamageMessage damageMessage)
         {
             // Set the Hurt parameter of the animator.
-            m_Animator.SetTrigger(m_HashHurt);
+            MAnimator.SetTrigger(_mHashHurt);
 
             // Find the direction of the damage.
             var forward = damageMessage.damageSource - transform.position;
@@ -654,8 +654,8 @@ namespace Gamekit3D
             var localHurt = transform.InverseTransformDirection(forward);
 
             // Set the HurtFromX and HurtFromY parameters of the animator based on the direction of the damage.
-            m_Animator.SetFloat(m_HashHurtFromX, localHurt.x);
-            m_Animator.SetFloat(m_HashHurtFromY, localHurt.z);
+            MAnimator.SetFloat(_mHashHurtFromX, localHurt.x);
+            MAnimator.SetFloat(_mHashHurtFromY, localHurt.z);
 
             // Shake the camera.
             CameraShake.Shake(CameraShake.k_PlayerHitShakeAmount, CameraShake.k_PlayerHitShakeTime);
@@ -667,11 +667,11 @@ namespace Gamekit3D
         // Called by OnReceiveMessage and by DeathVolumes in the scene.
         public void Die(Damageable.DamageMessage damageMessage)
         {
-            m_Animator.SetTrigger(m_HashDeath);
-            m_ForwardSpeed = 0f;
-            m_VerticalSpeed = 0f;
-            m_Respawning = true;
-            m_Damageable.isInvulnerable = true;
+            MAnimator.SetTrigger(_mHashDeath);
+            MForwardSpeed = 0f;
+            MVerticalSpeed = 0f;
+            MRespawning = true;
+            MDamageable.isInvulnerable = true;
         }
     }
 }

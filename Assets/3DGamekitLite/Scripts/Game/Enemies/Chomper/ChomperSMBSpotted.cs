@@ -13,7 +13,7 @@ namespace Gamekit3D
         {
             m_MonoBehaviour.FindTarget();
 
-            if (m_MonoBehaviour.target == null || m_MonoBehaviour.target.respawning)
+            if (m_MonoBehaviour.target == null || m_MonoBehaviour.target.Respawning)
             {
                 m_MonoBehaviour.StopPursuit();
                 return;
