@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
-using UnityEngine.UI;
 
 [TrackColor(0.1088343f, 0.4485294f, 0.2939095f)]
 [TrackClipType(typeof(MaterialSwitcherClip))]

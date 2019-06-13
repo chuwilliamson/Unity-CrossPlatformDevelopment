@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Chuwilliamson.GameEventSystem;
-using UnityEditor;
 using UnityEngine;
 
 namespace Chuwilliamson.ScriptableObjects

@@ -1,5 +1,4 @@
-﻿using Cinemachine;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEngine;
 
 namespace Chuwilliamson.ScriptableObjects

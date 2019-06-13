@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace Chuwilliamson
+﻿namespace Chuwilliamson
 {
     public class Stat
     {

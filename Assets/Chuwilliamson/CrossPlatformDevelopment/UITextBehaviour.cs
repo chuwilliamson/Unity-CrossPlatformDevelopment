@@ -1,5 +1,4 @@
-﻿using Chuwilliamson.Attributes;
-using Chuwilliamson.Variables;
+﻿using Chuwilliamson.Variables;
 using UnityEngine;
 using UnityEngine.UI;
 

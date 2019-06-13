@@ -1,35 +1,33 @@
 ﻿using UnityEngine;
-using System;
 using System.Collections;
-using Gamekit3D;
 
 
 public class PlayerInput : MonoBehaviour
 {
     public static PlayerInput Instance
     {
-        get { return s_Instance; }
+        get { return SInstance; }
     }
 
-    protected static PlayerInput s_Instance;
+    protected static PlayerInput SInstance;
 
     [HideInInspector]
     public bool playerControllerInputBlocked;
 
-    protected Vector2 m_Movement;
-    protected Vector2 m_Camera;
-    protected bool m_Jump;
-    protected bool m_Attack;
-    protected bool m_Pause;
-    protected bool m_ExternalInputBlocked;
+    protected Vector2 MMovement;
+    protected Vector2 MCamera;
+    protected bool MJump;
+    protected bool MAttack;
+    protected bool MPause;
+    protected bool MExternalInputBlocked;
 
     public Vector2 MoveInput
     {
         get
         {
-            if(playerControllerInputBlocked || m_ExternalInputBlocked)
+            if(playerControllerInputBlocked || MExternalInputBlocked)
                 return Vector2.zero;
-            return m_Movement;
+            return MMovement;
         }
     }
 
@@ -37,81 +35,81 @@ public class PlayerInput : MonoBehaviour
     {
         get
         {
-            if(playerControllerInputBlocked || m_ExternalInputBlocked)
+            if(playerControllerInputBlocked || MExternalInputBlocked)
                 return Vector2.zero;
-            return m_Camera;
+            return MCamera;
         }
     }
 
     public bool JumpInput
     {
-        get { return m_Jump && !playerControllerInputBlocked && !m_ExternalInputBlocked; }
+        get { return MJump && !playerControllerInputBlocked && !MExternalInputBlocked; }
     }
 
     public bool Attack
     {
-        get { return m_Attack && !playerControllerInputBlocked && !m_ExternalInputBlocked; }
+        get { return MAttack && !playerControllerInputBlocked && !MExternalInputBlocked; }
     }
 
     public bool Pause
     {
-        get { return m_Pause; }
+        get { return MPause; }
     }
 
-    WaitForSeconds m_AttackInputWait;
-    Coroutine m_AttackWaitCoroutine;
+    WaitForSeconds _mAttackInputWait;
+    Coroutine _mAttackWaitCoroutine;
 
-    const float k_AttackInputDuration = 0.03f;
+    const float KAttackInputDuration = 0.03f;
 
     void Awake()
     {
-        m_AttackInputWait = new WaitForSeconds(k_AttackInputDuration);
+        _mAttackInputWait = new WaitForSeconds(KAttackInputDuration);
 
-        if (s_Instance == null)
-            s_Instance = this;
-        else if (s_Instance != this)
-            throw new UnityException("There cannot be more than one PlayerInput script.  The instances are " + s_Instance.name + " and " + name + ".");
+        if (SInstance == null)
+            SInstance = this;
+        else if (SInstance != this)
+            throw new UnityException("There cannot be more than one PlayerInput script.  The instances are " + SInstance.name + " and " + name + ".");
     }
 
 
     void Update()
     {
-        m_Movement.Set(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        m_Camera.Set(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-        m_Jump = Input.GetButton("Jump");
+        MMovement.Set(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        MCamera.Set(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+        MJump = Input.GetButton("Jump");
 
         if (Input.GetButtonDown("Fire1"))
         {
-            if (m_AttackWaitCoroutine != null)
-                StopCoroutine(m_AttackWaitCoroutine);
+            if (_mAttackWaitCoroutine != null)
+                StopCoroutine(_mAttackWaitCoroutine);
 
-            m_AttackWaitCoroutine = StartCoroutine(AttackWait());
+            _mAttackWaitCoroutine = StartCoroutine(AttackWait());
         }
 
-        m_Pause = Input.GetButtonDown ("Pause");
+        MPause = Input.GetButtonDown ("Pause");
     }
 
     IEnumerator AttackWait()
     {
-        m_Attack = true;
+        MAttack = true;
 
-        yield return m_AttackInputWait;
+        yield return _mAttackInputWait;
 
-        m_Attack = false;
+        MAttack = false;
     }
 
     public bool HaveControl()
     {
-        return !m_ExternalInputBlocked;
+        return !MExternalInputBlocked;
     }
 
     public void ReleaseControl()
     {
-        m_ExternalInputBlocked = true;
+        MExternalInputBlocked = true;
     }
 
     public void GainControl()
     {
-        m_ExternalInputBlocked = false;
+        MExternalInputBlocked = false;
     }
 }

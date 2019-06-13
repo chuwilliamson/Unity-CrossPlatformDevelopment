@@ -1,6 +1,5 @@
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Playables;
 
 [CustomPropertyDrawer(typeof(SetLocationBehaviour))]
 public class SetLocationDrawer : PropertyDrawer

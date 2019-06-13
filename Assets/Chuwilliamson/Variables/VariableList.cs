@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Chuwilliamson.ScriptableObjects;
+﻿using Chuwilliamson.ScriptableObjects;
 using UnityEngine;
 
 namespace Chuwilliamson.Variables

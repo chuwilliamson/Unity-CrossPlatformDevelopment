@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
-using System.Collections.Generic;
 
 [TrackColor(0.1634948f, 0.7941176f, 0.4548861f)]
 [TrackClipType(typeof(SetLocationClip))]

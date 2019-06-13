@@ -2,7 +2,6 @@ using System;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Playables;
-using UnityEngine.Timeline;
 
 [Serializable]
 public class AudioSnapshotBehaviour : PlayableBehaviour
