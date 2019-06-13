@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Chuwilliamson.ScriptableObjects
 {
-    [CreateAssetMenu]
+    [CreateAssetMenu(menuName = "Chuwilliamson/Inventory")]
     public class Inventory : ScriptableObject, IList<Serialization.Item>
     {
         [SerializeField] public List<Serialization.Item> itemList;
