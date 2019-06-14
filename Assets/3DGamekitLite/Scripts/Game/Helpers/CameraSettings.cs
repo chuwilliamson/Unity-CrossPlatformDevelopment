@@ -28,10 +28,12 @@ namespace Gamekit3D
         public InvertSettings controllerInvertSettings;
         public bool allowRuntimeCameraSettingsChanges;
 
+        [SerializeField]
         string keyboardandmousefreelookrig = "KeyboardAndMouseFreeLookRig";
-        string ellen = "Ellen";
-        string controllerfreelookrig = "ControllerFreeLookRig";
-        string headtarget = "HeadTarget";
+        [SerializeField]
+        string ellen = "Ash Variant";
+        [SerializeField] string controllerfreelookrig = "ControllerFreeLookRig";
+        [SerializeField] string headtarget = "HeadTarget";
 
         public CinemachineFreeLook Current
         {
@@ -71,7 +73,8 @@ namespace Gamekit3D
 
         void Update()
         {
-            if (allowRuntimeCameraSettingsChanges)
+            
+            if (allowRuntimeCameraSettingsChanges|| follow == null)
             {
                 UpdateCameraSettings();
             }
