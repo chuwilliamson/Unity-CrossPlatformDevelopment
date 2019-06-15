@@ -1,5 +1,8 @@
-﻿using UnityEditor;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using Gamekit3D;
 
 namespace Gamekit3D
 {

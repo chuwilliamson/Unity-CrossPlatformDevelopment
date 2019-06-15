@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Cinemachine;
+using UnityEngine;
+using UnityEngine.Experimental.Rendering;
 
 namespace Gamekit3D
 {

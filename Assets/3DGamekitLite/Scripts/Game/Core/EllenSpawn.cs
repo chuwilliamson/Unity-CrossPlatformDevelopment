@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 
 namespace Gamekit3D
@@ -12,7 +14,6 @@ namespace Gamekit3D
         Material[] EllenMaterials;
 
         MaterialPropertyBlock m_PropertyBlock;
-        [SerializeField]
         Renderer m_Renderer;
         Vector4 pos;
         Vector3 renderBounds;
@@ -28,8 +29,7 @@ namespace Gamekit3D
         {
             respawnParticles.SetActive(false);
             m_PropertyBlock = new MaterialPropertyBlock();
-            if (m_Renderer == null)
-                m_Renderer = GetComponentInChildren<Renderer>();
+            m_Renderer = GetComponentInChildren<Renderer>();
             EllenMaterials = m_Renderer.materials;
 
             renderBounds = m_Renderer.bounds.size;

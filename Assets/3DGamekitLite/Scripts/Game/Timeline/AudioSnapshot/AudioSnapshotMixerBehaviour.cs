@@ -1,6 +1,8 @@
+using System;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Playables;
+using UnityEngine.Timeline;
 
 public class AudioSnapshotMixerBehaviour : PlayableBehaviour
 {

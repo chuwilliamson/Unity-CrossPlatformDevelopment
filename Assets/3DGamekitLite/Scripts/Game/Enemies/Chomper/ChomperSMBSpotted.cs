@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 namespace Gamekit3D
 {
@@ -13,7 +15,7 @@ namespace Gamekit3D
         {
             m_MonoBehaviour.FindTarget();
 
-            if (m_MonoBehaviour.target == null || m_MonoBehaviour.target.Respawning)
+            if (m_MonoBehaviour.target == null || m_MonoBehaviour.target.respawning)
             {
                 m_MonoBehaviour.StopPursuit();
                 return;

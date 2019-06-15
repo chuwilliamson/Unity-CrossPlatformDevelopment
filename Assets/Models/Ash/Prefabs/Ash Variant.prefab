@@ -139,22 +139,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa8b67e83b73fb4ba6b6a9b2482a664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraSettings: {fileID: 0}
-  canAttack: 1
-  emoteAttackPlayer: {fileID: 5153418062777019530}
-  emoteDeathPlayer: {fileID: 5155339740894293648}
-  emoteJumpPlayer: {fileID: 5153684609292102770}
-  emoteLandingPlayer: {fileID: 5153316082730933086}
-  footstepPlayer: {fileID: 5153930732227854638}
-  gravity: 20
-  hurtAudioPlayer: {fileID: 5153992531010289914}
-  idleTimeout: 5
-  jumpSpeed: 10
-  landingPlayer: {fileID: 5153817354413237606}
   maxForwardSpeed: 8
-  maxTurnSpeed: 1200
-  meleeWeapon: {fileID: 5153589319142055636}
+  gravity: 20
+  jumpSpeed: 10
   minTurnSpeed: 400
+  maxTurnSpeed: 1200
+  idleTimeout: 5
+  canAttack: 1
+  cameraSettings: {fileID: 0}
+  meleeWeapon: {fileID: 5153589319142055636}
+  footstepPlayer: {fileID: 5153930732227854638}
+  hurtAudioPlayer: {fileID: 5153992531010289914}
+  landingPlayer: {fileID: 5153817354413237606}
+  emoteLandingPlayer: {fileID: 5153316082730933086}
+  emoteDeathPlayer: {fileID: 5155339740894293648}
+  emoteAttackPlayer: {fileID: 5153418062777019530}
+  emoteJumpPlayer: {fileID: 5153684609292102770}
 --- !u!114 &4479657511402043904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,7 +535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5052308037809346028
 Transform:
   m_ObjectHideFlags: 0
@@ -5157,7 +5157,7 @@ ParticleSystem:
 --- !u!199 &4960277219566292324
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -6561,7 +6561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5044614623930666650
 Transform:
   m_ObjectHideFlags: 0
@@ -7935,7 +7935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5045107105175284680
 Transform:
   m_ObjectHideFlags: 0
@@ -12720,7 +12720,7 @@ ParticleSystem:
 --- !u!199 &4960338460138155874
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12794,7 +12794,6 @@ MonoBehaviour:
   effectTime: 0
   EllenRespawnMaterials: []
   respawnParticles: {fileID: 5048780593100879418}
-  m_Renderer: {fileID: 6044839049616066593}
 --- !u!1001 &7337021717098770827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12899,21 +12898,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2aae75c1a5542b47b7a4866853147ca, type: 3}
---- !u!1 &6044839049604498731 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3905117264837981344, guid: d2aae75c1a5542b47b7a4866853147ca,
-    type: 3}
-  m_PrefabInstance: {fileID: 7337021717098770827}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6044839049604208907 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3905117264838273152, guid: d2aae75c1a5542b47b7a4866853147ca,
     type: 3}
   m_PrefabInstance: {fileID: 7337021717098770827}
   m_PrefabAsset: {fileID: 0}
---- !u!137 &6044839049616066593 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 3905117264826415530, guid: d2aae75c1a5542b47b7a4866853147ca,
+--- !u!1 &6044839049604498731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3905117264837981344, guid: d2aae75c1a5542b47b7a4866853147ca,
     type: 3}
   m_PrefabInstance: {fileID: 7337021717098770827}
   m_PrefabAsset: {fileID: 0}

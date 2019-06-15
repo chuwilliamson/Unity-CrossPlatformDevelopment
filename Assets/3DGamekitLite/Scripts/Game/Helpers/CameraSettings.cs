@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 
@@ -28,13 +30,6 @@ namespace Gamekit3D
         public InvertSettings controllerInvertSettings;
         public bool allowRuntimeCameraSettingsChanges;
 
-        [SerializeField]
-        string keyboardandmousefreelookrig = "KeyboardAndMouseFreeLookRig";
-        [SerializeField]
-        string ellen = "Ash Variant";
-        [SerializeField] string controllerfreelookrig = "ControllerFreeLookRig";
-        [SerializeField] string headtarget = "HeadTarget";
-
         public CinemachineFreeLook Current
         {
             get { return inputChoice == InputChoice.KeyboardAndMouse ? keyboardAndMouseCamera : controllerCamera; }
@@ -42,24 +37,20 @@ namespace Gamekit3D
 
         void Reset()
         {
-
-            Transform keyboardAndMouseCameraTransform = transform.Find(keyboardandmousefreelookrig);
+            Transform keyboardAndMouseCameraTransform = transform.Find("KeyboardAndMouseFreeLookRig");
             if (keyboardAndMouseCameraTransform != null)
                 keyboardAndMouseCamera = keyboardAndMouseCameraTransform.GetComponent<CinemachineFreeLook>();
 
-
-            Transform controllerCameraTransform = transform.Find(controllerfreelookrig);
+            Transform controllerCameraTransform = transform.Find("ControllerFreeLookRig");
             if (controllerCameraTransform != null)
                 controllerCamera = controllerCameraTransform.GetComponent<CinemachineFreeLook>();
 
             PlayerController playerController = FindObjectOfType<PlayerController>();
-
-            if (playerController != null && playerController.name == ellen)
+            if (playerController != null && playerController.name == "Ellen")
             {
                 follow = playerController.transform;
 
-
-                lookAt = follow.Find(headtarget);
+                lookAt = follow.Find("HeadTarget");
 
                 if (playerController.cameraSettings == null)
                     playerController.cameraSettings = this;
@@ -73,8 +64,7 @@ namespace Gamekit3D
 
         void Update()
         {
-            
-            if (allowRuntimeCameraSettingsChanges|| follow == null)
+            if (allowRuntimeCameraSettingsChanges)
             {
                 UpdateCameraSettings();
             }
@@ -95,5 +85,5 @@ namespace Gamekit3D
             keyboardAndMouseCamera.Priority = inputChoice == InputChoice.KeyboardAndMouse ? 1 : 0;
             controllerCamera.Priority = inputChoice == InputChoice.Controller ? 1 : 0;
         }
-    }
+    } 
 }

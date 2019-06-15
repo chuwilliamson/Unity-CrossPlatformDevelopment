@@ -1,5 +1,7 @@
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.UI;
 
 [CustomPropertyDrawer(typeof(ScreenFaderBehaviour))]
 public class ScreenFaderDrawer : PropertyDrawer

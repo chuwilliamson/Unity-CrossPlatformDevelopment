@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEditor.PackageManager;
 using UnityEditor.PackageManager.Requests;
+using UnityEditor.Compilation;
 
 public class PackageChecker
 {
