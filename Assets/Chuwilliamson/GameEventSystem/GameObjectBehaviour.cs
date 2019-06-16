@@ -12,19 +12,19 @@ namespace Chuwilliamson.GameEventSystem
 
         private void OnDestroy()
         {
-            onDestroyed.Raise(gameObject);
+            onDestroyed?.Raise(gameObject);
         }
 
         // Use this for initialization
         private void Start()
         {
-            onStart.Raise(gameObject);
+            onStart?.Raise(gameObject);
         }
 
         private void Update()
         {
             if (!raiseEventInUpdate) return;
-            onUpdate.Raise(gameObject);
+            onUpdate?.Raise(gameObject);
         }
     }
 }
