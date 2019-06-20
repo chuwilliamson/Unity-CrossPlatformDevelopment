@@ -99,6 +99,7 @@ namespace Gamekit3D
 
         // Tags
         readonly int m_HashBlockInput = Animator.StringToHash("BlockInput");
+        readonly int m_HashWeaponEquipped = Animator.StringToHash("WeaponEquipped");
 
         protected bool IsMoveInput
         {
@@ -234,6 +235,7 @@ namespace Gamekit3D
             equipped |= m_NextStateInfo.shortNameHash == m_HashEllenCombo2 || m_CurrentStateInfo.shortNameHash == m_HashEllenCombo2;
             equipped |= m_NextStateInfo.shortNameHash == m_HashEllenCombo3 || m_CurrentStateInfo.shortNameHash == m_HashEllenCombo3;
             equipped |= m_NextStateInfo.shortNameHash == m_HashEllenCombo4 || m_CurrentStateInfo.shortNameHash == m_HashEllenCombo4;
+            equipped |=  m_CurrentStateInfo.tagHash == m_HashWeaponEquipped;
 
             return equipped;
         }

@@ -118,6 +118,19 @@ AnimatorController:
     m_IKPass: 1
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!114 &114029592838437162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a7651b066fdb843b9ab4d0e7dd7a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectIndex: 0
 --- !u!114 &114059327434463096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -181,6 +194,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunMovement: 0
+--- !u!114 &114294610077185814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18815b42b33354d4c9fecff7245b920b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114470149599064490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,6 +219,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunMovement: 1
+--- !u!114 &114521648816380478
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18815b42b33354d4c9fecff7245b920b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114537025274741618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -207,6 +244,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunMovement: 0
+--- !u!114 &114558642685855682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bf4cd5e8353184690b73bf35b6d1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!114 &114625563536636152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,6 +272,19 @@ MonoBehaviour:
   numberOfStates: 3
   minNormTime: 0
   maxNormTime: 5
+--- !u!114 &114655261014007854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38bf4cd5e8353184690b73bf35b6d1b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
 --- !u!114 &114700893978788952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -232,6 +295,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52845ff9653a83742aac69939895a280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114723107598084964
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18815b42b33354d4c9fecff7245b920b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114889589919636784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18815b42b33354d4c9fecff7245b920b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114910776015171016
@@ -247,6 +334,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectIndex: 1
+--- !u!114 &114921426181359030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18815b42b33354d4c9fecff7245b920b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114931531179955440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1373,7 +1472,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.7000036
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -1664,7 +1763,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.7000036
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -1802,12 +1901,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: MeleeAttack
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: MeleeAttack
-    m_EventTreshold: 0
+  - m_ConditionMode: 4
+    m_ConditionEvent: ForwardSpeed
+    m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 1107319438297266356}
   m_DstState: {fileID: 0}
   m_Solo: 0
@@ -2136,13 +2232,19 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: MeleeAttack
+  - m_ConditionMode: 3
+    m_ConditionEvent: ForwardSpeed
+    m_EventTreshold: 0.1
+  - m_ConditionMode: 3
+    m_ConditionEvent: StateTime
     m_EventTreshold: 0
+  - m_ConditionMode: 4
+    m_ConditionEvent: StateTime
+    m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 1107875140957937604}
   m_DstState: {fileID: 0}
   m_Solo: 0
-  m_Mute: 1
+  m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
   m_TransitionDuration: 0
@@ -2421,7 +2523,9 @@ AnimatorState:
   - {fileID: 1101341691124866478}
   - {fileID: 1101196481003464348}
   - {fileID: 1101240955869084784}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114294610077185814}
+  - {fileID: 114029592838437162}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 1
   m_WriteDefaultValues: 1
@@ -2431,7 +2535,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 003cfa2924bc5c44b901f6e047346e04, type: 2}
-  m_Tag: 
+  m_Tag: WeaponEquipped
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -2450,7 +2554,8 @@ AnimatorState:
   - {fileID: 1101552310794763090}
   - {fileID: 1101205821793180734}
   - {fileID: 1101767195835030326}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114723107598084964}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 1
   m_WriteDefaultValues: 1
@@ -2460,7 +2565,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 8232922270e26084ca92aeb213f482bc, type: 2}
-  m_Tag: 
+  m_Tag: WeaponEquipped
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -2565,7 +2670,8 @@ AnimatorState:
   - {fileID: 1101343662635054264}
   - {fileID: 1101509876835941782}
   - {fileID: 1101008939656962282}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114921426181359030}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 1
   m_WriteDefaultValues: 1
@@ -2575,7 +2681,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 65622f9f83b77134aa9e6db16e83834c, type: 2}
-  m_Tag: 
+  m_Tag: WeaponEquipped
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -2594,7 +2700,8 @@ AnimatorState:
   - {fileID: 1101765374179413666}
   - {fileID: 1101528729120613272}
   - {fileID: 1101512679615276110}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114889589919636784}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 1
   m_WriteDefaultValues: 1
@@ -2604,7 +2711,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 9b84185e86937fa409b56d6a4b164b71, type: 2}
-  m_Tag: 
+  m_Tag: WeaponEquipped
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -2893,7 +3000,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400004, guid: 9a9a484b0266cfa4db67a965b55e20a6, type: 3}
+  m_Motion: {fileID: 7400000, guid: 3e7ea49ddb7b1244bbf710ad843c859b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2967,7 +3074,8 @@ AnimatorState:
   m_Transitions:
   - {fileID: 1101225885528551840}
   - {fileID: 1101174831033707328}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114521648816380478}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 1
   m_WriteDefaultValues: 1
@@ -2977,7 +3085,7 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: d303e98b078f03c4d9897b0b4db22fb7, type: 2}
-  m_Tag: 
+  m_Tag: WeaponEquipped
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
@@ -3189,7 +3297,8 @@ AnimatorStateMachine:
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114558642685855682}
   m_AnyStatePosition: {x: 792, y: 0, z: 0}
   m_EntryPosition: {x: 504, y: -84, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
@@ -3262,7 +3371,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: -96, y: -336, z: 0}
   m_ExitPosition: {x: -96, y: -384, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 1102412307839315152}
+  m_DefaultState: {fileID: 1102819829676395832}
 --- !u!1107 &1107516587743271850
 AnimatorStateMachine:
   serializedVersion: 5
@@ -3330,7 +3439,8 @@ AnimatorStateMachine:
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114655261014007854}
   m_AnyStatePosition: {x: 324, y: 192, z: 0}
   m_EntryPosition: {x: 756, y: -492, z: 0}
   m_ExitPosition: {x: 528, y: 0, z: 0}
